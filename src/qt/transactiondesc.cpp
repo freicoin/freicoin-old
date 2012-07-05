@@ -132,7 +132,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
             //
             int64 nUnmatured = 0;
             BOOST_FOREACH(const CTxOut& txout, wtx.vout)
-                nUnmatured += wallet->GetCredit(txout);
+                nUnmatured += wallet->GetCredit(txout,wtx.GetDepthInMainChain());
             strHTML += tr("<b>Credit:</b> ");
             if (wtx.IsInMainChain())
                 strHTML += tr("(%1 matures in %2 more blocks)")
@@ -209,7 +209,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                         strHTML += tr("<b>Debit:</b> ") + FreicoinUnits::formatWithUnit(FreicoinUnits::BTC,-wallet->GetDebit(txin)) + "<br>";
                 BOOST_FOREACH(const CTxOut& txout, wtx.vout)
                     if (wallet->IsMine(txout))
-                        strHTML += tr("<b>Credit:</b> ") + FreicoinUnits::formatWithUnit(FreicoinUnits::BTC,wallet->GetCredit(txout)) + "<br>";
+                        strHTML += tr("<b>Credit:</b> ") + FreicoinUnits::formatWithUnit(FreicoinUnits::BTC,wallet->GetCredit(txout,wtx.GetDepthInMainChain())) + "<br>";
             }
         }
 
@@ -239,7 +239,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                     strHTML += "<b>Debit:</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::BTC,-wallet->GetDebit(txin)) + "<br>";
             BOOST_FOREACH(const CTxOut& txout, wtx.vout)
                 if(wallet->IsMine(txout))
-                    strHTML += "<b>Credit:</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::BTC,wallet->GetCredit(txout)) + "<br>";
+                    strHTML += "<b>Credit:</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::BTC,wallet->GetCredit(txout,wtx.GetDepthInMainChain())) + "<br>";
 
             strHTML += "<br><b>Transaction:</b><br>";
             strHTML += GUIUtil::HtmlEscape(wtx.ToString(), true);
