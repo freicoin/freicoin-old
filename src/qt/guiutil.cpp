@@ -82,7 +82,7 @@ bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out)
         return false;
 
     // check if the address is valid
-    CBitcoinAddress addressFromUri(uri.path().toStdString());
+    CFreicoinAddress addressFromUri(uri.path().toStdString());
     if (!addressFromUri.IsValid())
         return false;
 

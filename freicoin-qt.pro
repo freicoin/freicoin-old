@@ -1,6 +1,6 @@
 TEMPLATE = app
-TARGET =
-VERSION = 0.6.99
+TARGET = freicoin
+VERSION = 0.0.1
 INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE USE_IPV6
 CONFIG += no_include_pwd
@@ -11,9 +11,21 @@ CONFIG += no_include_pwd
 # use: BOOST_THREAD_LIB_SUFFIX=_win32-...
 # or when linking against a specific BerkelyDB version: BDB_LIB_SUFFIX=-4.8
 
-# Dependency library locations can be customized with:
-#    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
-#    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
+# Dependency library locations can be customized with BOOST_INCLUDE_PATH, 
+#    BOOST_LIB_PATH, BDB_INCLUDE_PATH, BDB_LIB_PATH
+#    OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
+
+BOOST_INCLUDE_PATH = "E:\\boost-1.47.0-mgw"
+BOOST_LIB_PATH = "E:\\boost-1.47.0-mgw\\build"
+BDB_INCLUDE_PATH = "E:\\deps\\include"
+BDB_LIB_PATH = "E:\\deps\\lib"
+OPENSSL_INCLUDE_PATH = "E:\\deps\\include\\openssl"
+OPENSSL_LIB_PATH = "E:\\deps\\lib"
+MINIUPNPC_INCLUDE_PATH = "E:\\miniupnpc-1.6-mgw"
+MINIUPNPC_LIB_PATH = "E:\\miniupnpc-1.6-mgw"
+BOOST_LIB_SUFFIX = "-mgw44-mt-s-1_47"
+MPFR_LIB_PATH = "E:\\mpfr-3.1.1\\src\\build"
+GMP_LIB_PATH= "E:\\gmp-5.0.5\\build"
 
 OBJECTS_DIR = build
 MOC_DIR = build
@@ -73,22 +85,22 @@ contains(FREICOIN_NEED_QT_PLUGINS, 1) {
     QTPLUGIN += qcncodecs qjpcodecs qtwcodecs qkrcodecs qtaccessiblewidgets
 }
 
-!windows {
-    # for extra security against potential buffer overflows
-    QMAKE_CXXFLAGS += -fstack-protector
-    QMAKE_LFLAGS += -fstack-protector
-    # do not enable this on windows, as it will result in a non-working executable!
-}
+#!windows {
+#    # for extra security against potential buffer overflows
+#    QMAKE_CXXFLAGS += -fstack-protector
+#    QMAKE_LFLAGS += -fstack-protector
+#    # do not enable this on windows, as it will result in a non-working executable!
+#}
 
 # regenerate src/build.h
-!windows || contains(USE_BUILD_INFO, 1) {
-    genbuild.depends = FORCE
-    genbuild.commands = cd $$PWD; /bin/sh share/genbuild.sh $$OUT_PWD/build/build.h
-    genbuild.target = $$OUT_PWD/build/build.h
-    PRE_TARGETDEPS += $$OUT_PWD/build/build.h
-    QMAKE_EXTRA_TARGETS += genbuild
-    DEFINES += HAVE_BUILD_INFO
-}
+#!windows || contains(USE_BUILD_INFO, 1) {
+#    genbuild.depends = FORCE
+#    genbuild.commands = cd $$PWD; /bin/sh share/genbuild.sh $$OUT_PWD/build/build.h
+#    genbuild.target = $$OUT_PWD/build/build.h
+#    PRE_TARGETDEPS += $$OUT_PWD/build/build.h
+#    QMAKE_EXTRA_TARGETS += genbuild
+#    DEFINES += HAVE_BUILD_INFO
+#}
 
 QMAKE_CXXFLAGS_WARN_ON = -fdiagnostics-show-option -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter
 
@@ -308,7 +320,7 @@ isEmpty(BOOST_INCLUDE_PATH) {
     macx:BOOST_INCLUDE_PATH = /opt/local/include
 }
 
-windows:LIBS += -lws2_32 -lshlwapi -lmswsock
+
 windows:DEFINES += WIN32
 windows:RC_FILE = src/qt/res/freicoin-qt.rc
 
@@ -337,11 +349,16 @@ macx:TARGET = "Freicoin-Qt"
 
 # Set libraries and includes at end, to use platform-defined defaults if not overridden
 INCLUDEPATH += $$BOOST_INCLUDE_PATH $$BDB_INCLUDE_PATH $$OPENSSL_INCLUDE_PATH $$QRENCODE_INCLUDE_PATH
-LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
+INCLUDEPATH += E:\\mpfr-3.1.1\\src E:\\gmp-5.0.5
+
+
+windows:LIBS += -lshlwapi -lmswsock
+LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,) $$join(GMP_LIB_PATH,,-L,) $$join(MPFR_LIB_PATH,,-L,)
 LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
-# -lgdi32 has to happen after -lcrypto (see  #681)
-windows:LIBS += -lole32 -luuid -lgdi32
+windows:LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
 LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX
+LIBS += -lmpfr
+LIBS += -lgmp
 
 contains(RELEASE, 1) {
     !windows:!macx {
