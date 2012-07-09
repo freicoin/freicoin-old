@@ -247,11 +247,11 @@ BOOST_AUTO_TEST_CASE(script_CHECKMULTISIG12)
     txTo12.vout.resize(1);
     txTo12.vin[0].prevout.n = 0;
     txTo12.vin[0].prevout.hash = txFrom12.GetHash();
-    txTo12.vout[0].nValue = 1;
+    txTo12.vout[0].SetInitialValue(1);
 
     CScript goodsig1 = sign_multisig(scriptPubKey12, key1, txTo12);
     BOOST_CHECK(VerifyScript(goodsig1, scriptPubKey12, txTo12, 0, true, 0));
-    txTo12.vout[0].nValue = 2;
+    txTo12.vout[0].SetInitialValue(2);
     BOOST_CHECK(!VerifyScript(goodsig1, scriptPubKey12, txTo12, 0, true, 0));
 
     CScript goodsig2 = sign_multisig(scriptPubKey12, key2, txTo12);
@@ -281,7 +281,7 @@ BOOST_AUTO_TEST_CASE(script_CHECKMULTISIG23)
     txTo23.vout.resize(1);
     txTo23.vin[0].prevout.n = 0;
     txTo23.vin[0].prevout.hash = txFrom23.GetHash();
-    txTo23.vout[0].nValue = 1;
+    txTo23.vout[0].SetInitialValue(1);
 
     std::vector<CKey> keys;
     keys.push_back(key1); keys.push_back(key2);

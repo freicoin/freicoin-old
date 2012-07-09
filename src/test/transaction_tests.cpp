@@ -44,16 +44,16 @@ SetupDummyInputs(CBasicKeyStore& keystoreRet, MapPrevTx& inputsRet)
 
     // Create some dummy input transactions
     dummyTransactions[0].vout.resize(2);
-    dummyTransactions[0].vout[0].nValue = 11*CENT;
+    dummyTransactions[0].vout[0].SetInitialValue(11*CENT);
     dummyTransactions[0].vout[0].scriptPubKey << key[0].GetPubKey() << OP_CHECKSIG;
-    dummyTransactions[0].vout[1].nValue = 50*CENT;
+    dummyTransactions[0].vout[1].SetInitialValue(50*CENT);
     dummyTransactions[0].vout[1].scriptPubKey << key[1].GetPubKey() << OP_CHECKSIG;
     inputsRet[dummyTransactions[0].GetHash()] = make_pair(CTxIndex(), dummyTransactions[0]);
 
     dummyTransactions[1].vout.resize(2);
-    dummyTransactions[1].vout[0].nValue = 21*CENT;
+    dummyTransactions[1].vout[0].SetInitialValue(21*CENT);
     dummyTransactions[1].vout[0].scriptPubKey.SetDestination(key[2].GetPubKey().GetID());
-    dummyTransactions[1].vout[1].nValue = 22*CENT;
+    dummyTransactions[1].vout[1].SetInitialValue(22*CENT);
     dummyTransactions[1].vout[1].scriptPubKey.SetDestination(key[3].GetPubKey().GetID());
     inputsRet[dummyTransactions[1].GetHash()] = make_pair(CTxIndex(), dummyTransactions[1]);
 
@@ -78,11 +78,12 @@ BOOST_AUTO_TEST_CASE(test_Get)
     t1.vin[2].prevout.n = 1;
     t1.vin[2].scriptSig << std::vector<unsigned char>(65, 0) << std::vector<unsigned char>(33, 4);
     t1.vout.resize(2);
-    t1.vout[0].nValue = 90*CENT;
+    t1.vout[0].SetInitialValue(90*CENT);
     t1.vout[0].scriptPubKey << OP_1;
 
     BOOST_CHECK(t1.AreInputsStandard(dummyInputs));
-    BOOST_CHECK_EQUAL(t1.GetValueIn(dummyInputs), (50+21+22)*CENT);
+    BOOST_CHECK_EQUAL(t1.GetValueIn(dummyInputs,0), (50+21+22)*CENT);
+    BOOST_CHECK_EQUAL(t1.GetValueIn(dummyInputs,20), t1.GetValueOut(20));  //this test fails, why??
 
     // Adding extra junk to the scriptSig should make it non-standard:
     t1.vin[0].scriptSig << OP_11;
@@ -110,11 +111,11 @@ BOOST_AUTO_TEST_CASE(test_GetThrow)
     t1.vin[2].prevout.hash = dummyTransactions[1].GetHash();;
     t1.vin[2].prevout.n = 1;
     t1.vout.resize(2);
-    t1.vout[0].nValue = 90*CENT;
+    t1.vout[0].SetInitialValue(90*CENT);
     t1.vout[0].scriptPubKey << OP_1;
 
     BOOST_CHECK_THROW(t1.AreInputsStandard(missingInputs), runtime_error);
-    BOOST_CHECK_THROW(t1.GetValueIn(missingInputs), runtime_error);
+    BOOST_CHECK_THROW(t1.GetValueIn(missingInputs,0), runtime_error);
 }
 
 BOOST_AUTO_TEST_SUITE_END()
