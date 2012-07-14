@@ -6,7 +6,7 @@
 #include <boost/assign/list_of.hpp>
 
 #include "base58.h"
-#include "bitcoinrpc.h"
+#include "freicoinrpc.h"
 #include "db.h"
 #include "init.h"
 #include "main.h"
@@ -46,7 +46,7 @@ ScriptPubKeyToJSON(const CScript& scriptPubKey, Object& out)
 
     Array a;
     BOOST_FOREACH(const CTxDestination& addr, addresses)
-        a.push_back(CBitcoinAddress(addr).ToString());
+        a.push_back(CFreicoinAddress(addr).ToString());
     out.push_back(Pair("addresses", a));
 }
 
@@ -80,7 +80,14 @@ TxToJSON(const CTransaction& tx, const uint256 hashBlock, Object& entry)
     {
         const CTxOut& txout = tx.vout[i];
         Object out;
-        out.push_back(Pair("value", ValueFromAmount(txout.nValue)));
+        const CBlockIndex  *pPrevBlock;
+
+        map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.find(hashBlock);
+        if ( mi == mapBlockIndex.end() )
+        	throw std::runtime_error("TxToJSON() : hashBlock not found");
+        pPrevBlock = (*mi).second;
+
+        out.push_back(Pair("value", ValueFromAmount(txout.GetPresentValue(pPrevBlock->nHeight))));
         out.push_back(Pair("n", (boost::int64_t)i));
         Object o;
         ScriptPubKeyToJSON(txout.scriptPubKey, o);
@@ -170,7 +177,7 @@ Value listunspent(const Array& params, bool fHelp)
         if (out.nDepth < nMinDepth || out.nDepth > nMaxDepth)
             continue;
 
-        int64 nValue = out.tx->vout[out.i].nValue;
+        int64 nValue = out.tx->vout[out.i].GetPresentValue(out.nDepth);
         const CScript& pk = out.tx->vout[out.i].scriptPubKey;
         Object entry;
         entry.push_back(Pair("txid", out.tx->GetHash().GetHex()));
@@ -225,12 +232,12 @@ Value createrawtransaction(const Array& params, bool fHelp)
         rawTx.vin.push_back(in);
     }
 
-    set<CBitcoinAddress> setAddress;
+    set<CFreicoinAddress> setAddress;
     BOOST_FOREACH(const Pair& s, sendTo)
     {
-        CBitcoinAddress address(s.name_);
+        CFreicoinAddress address(s.name_);
         if (!address.IsValid())
-            throw JSONRPCError(-5, string("Invalid Bitcoin address:")+s.name_);
+            throw JSONRPCError(-5, string("Invalid Freicoin address:")+s.name_);
 
         if (setAddress.count(address))
             throw JSONRPCError(-8, string("Invalid parameter, duplicated address: ")+s.name_);
@@ -389,7 +396,7 @@ Value signrawtransaction(const Array& params, bool fHelp)
         Array keys = params[2].get_array();
         BOOST_FOREACH(Value k, keys)
         {
-            CBitcoinSecret vchSecret;
+            CFreicoinSecret vchSecret;
             bool fGood = vchSecret.SetString(k.get_str());
             if (!fGood)
                 throw JSONRPCError(-5,"Invalid private key");

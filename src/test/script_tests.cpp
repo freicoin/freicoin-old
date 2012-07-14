@@ -351,7 +351,7 @@ BOOST_AUTO_TEST_CASE(script_combineSigs)
     txTo.vin[0].prevout.n = 0;
     txTo.vin[0].prevout.hash = txFrom.GetHash();
     CScript& scriptSig = txTo.vin[0].scriptSig;
-    txTo.vout[0].nValue = 1;
+    txTo.vout[0].SetInitialValue(1);
 
     CScript empty;
     CScript combined = CombineSignatures(scriptPubKey, txTo, 0, empty, empty);

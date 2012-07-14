@@ -1522,7 +1522,7 @@ Value gettransaction(const Array& params, bool fHelp)
     int64 nCredit = wtx.GetCredit();
     int64 nDebit = wtx.GetDebit();
     int64 nNet = nCredit - nDebit;
-    int64 nFee = (wtx.IsFromMe() ? wtx.GetValueOut() - nDebit : 0);
+    int64 nFee = (wtx.IsFromMe() ? wtx.GetValueOut(0) - nDebit : 0);
 
     entry.push_back(Pair("amount", ValueFromAmount(nNet - nFee)));
     if (wtx.IsFromMe())
