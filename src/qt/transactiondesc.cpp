@@ -125,7 +125,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
             //
             int64 nUnmatured = 0;
             BOOST_FOREACH(const CTxOut& txout, wtx.vout)
-                nUnmatured += wallet->GetCredit(txout,wtx.GetDepthInMainChain());
+                nUnmatured += wallet->GetCredit(wtx,txout,wtx.GetDepthInMainChain());
             strHTML += "<b>" + tr("Credit") + ":</b> ";
             if (wtx.IsInMainChain())
                 strHTML += FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, nUnmatured)+ " (" + tr("matures in %n more block(s)", "", wtx.GetBlocksToMaturity()) + ")";
@@ -200,7 +200,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                         strHTML += "<b>" + tr("Debit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -wallet->GetDebit(txin)) + "<br>";
                 BOOST_FOREACH(const CTxOut& txout, wtx.vout)
                     if (wallet->IsMine(txout))
-                        strHTML += "<b>" + tr("Credit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, wallet->GetCredit(txout,wtx.GetDepthInMainChain())) + "<br>";
+                        strHTML += "<b>" + tr("Credit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, wallet->GetCredit(wtx,txout,wtx.GetDepthInMainChain())) + "<br>";
             }
         }
 
@@ -230,7 +230,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                     strHTML += "<b>" + tr("Debit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -wallet->GetDebit(txin)) + "<br>";
             BOOST_FOREACH(const CTxOut& txout, wtx.vout)
                 if(wallet->IsMine(txout))
-                    strHTML += "<b>" + tr("Credit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, wallet->GetCredit(txoutwtx.GetDepthInMainChain())) + "<br>";
+                    strHTML += "<b>" + tr("Credit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, wallet->GetCredit(wtx,txout,wtx.GetDepthInMainChain())) + "<br>";
 
             strHTML += "<br><b>" + tr("Transaction") + ":</b><br>";
             strHTML += GUIUtil::HtmlEscape(wtx.ToString(), true);
