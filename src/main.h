@@ -636,7 +636,8 @@ public:
         return (a.nVersion  == b.nVersion &&
                 a.vin       == b.vin &&
                 a.vout      == b.vout &&
-                a.nLockTime == b.nLockTime);
+                a.nLockTime == b.nLockTime &&
+                a.nFee == b.nFee);
     }
 
     friend bool operator!=(const CTransaction& a, const CTransaction& b)
@@ -648,12 +649,13 @@ public:
     std::string ToString() const
     {
         std::string str;
-        str += strprintf("CTransaction(hash=%s, ver=%d, vin.size=%d, vout.size=%d, nLockTime=%d)\n",
+        str += strprintf("CTransaction(hash=%s, ver=%d, vin.size=%d, vout.size=%d, nLockTime=%d, nFee=%d)\n",
             GetHash().ToString().substr(0,10).c_str(),
             nVersion,
             vin.size(),
             vout.size(),
-            nLockTime);
+            nLockTime,
+            nFee);
         for (unsigned int i = 0; i < vin.size(); i++)
             str += "    " + vin[i].ToString() + "\n";
         for (unsigned int i = 0; i < vout.size(); i++)
