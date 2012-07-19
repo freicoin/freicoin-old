@@ -40,6 +40,8 @@ int64 nTimeBestReceived = 0;
 
 CMedianFilter<int> cPeerBlockCounts(5, 0); // Amount of blocks that other nodes claim to have
 
+map< uint256, vector<int64> > vTxValueCacheIndex;
+
 map<uint256, CBlock*> mapOrphanBlocks;
 multimap<uint256, CBlock*> mapOrphanBlocksByPrev;
 
@@ -1133,6 +1135,14 @@ const CTxOut& CTransaction::GetOutputFor(const CTxIn& input, const MapPrevTx& in
     return txPrev.vout[input.prevout.n];
 }
 
+bool CheckValueCache (const uint256 txHash)
+{
+	map<uint256, vector<int64> >::iterator mi = vTxValueCacheIndex.find(txHash);
+	if ( mi == vTxValueCacheIndex.end() )
+		return false;
+	return true;
+}
+
 int64 GetTimeValueAdjustment(int64 nInitialValue, int nRelativeDepth)
 {
     int64 nResult;
@@ -1165,11 +1175,22 @@ int64 GetPresentValue(const CTransaction& tx, const CTxOut& output, int nRelativ
     if ( ! tx.IsCoinBase() ) {
         int64 nValueIn;      // tx.GetValueIn()
         int64 nValueOut = 0; // sum(txout.nValue for txout in tx.vout)
+        vector<int64> TxValue;
 
         // TODO: retrieve nValueIn, nValueOut from cache (if present)
-        bool fCache = false;
+        bool fCache = CheckValueCache(tx.GetHash());
 
-        if ( ! fCache ) {
+        if ( fCache )
+        {
+        	map<uint256, vector<int64> >::iterator mi = vTxValueCacheIndex.find(tx.GetHash());
+        	TxValue = (*mi).second;
+        	nValueIn = TxValue[0];
+        	nValueOut = TxValue[1];
+        	printf("\n\nGetPresentValue() : Cached txn: %s ValueIn: %"PRI64d" ValueOut: %"PRI64d" Delta: %"PRI64d" nFee: %"PRI64d"\n\n",tx.GetHash().ToString().substr(0,10).c_str(),nValueIn,nValueOut,nValueIn-nValueOut,tx.nFee);
+        }
+
+        else
+        {
             // Inputs for tx.GetValueIn(), which we need to fill in.
             MapPrevTx mapInputs;
             int       nBlockHeight;
@@ -1207,6 +1228,11 @@ int64 GetPresentValue(const CTransaction& tx, const CTxOut& output, int nRelativ
                 if (!MoneyRange(nValueOut))
                     throw std::runtime_error("GetPresentValue() : overflow of output total");
             }
+
+            TxValue.push_back(nValueIn);
+            TxValue.push_back(nValueOut);
+            vTxValueCacheIndex.insert(make_pair(tx.GetHash(),TxValue));
+            printf("\n\nGetPresentValue() : Calculated txn: %s ValueIn: %"PRI64d" ValueOut: %"PRI64d" Delta: %"PRI64d" nFee: %"PRI64d"\n\n",tx.GetHash().ToString().substr(0,10).c_str(),nValueIn,nValueOut,nValueIn-nValueOut,tx.nFee);
         }
 
         // TODO: cache nValueIn and nValueOut for future use
