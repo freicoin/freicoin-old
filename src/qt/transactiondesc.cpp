@@ -180,7 +180,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx)
                 if (fAllToMe)
                 {
                     // Payment to self
-                    int64 nChange = wtx.GetChange();
+                    int64 nChange = wtx.GetChange(wtx.GetDepthInMainChain());
                     int64 nValue = nCredit - nChange;
                     strHTML += "<b>" + tr("Debit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, -nValue) + "<br>";
                     strHTML += "<b>" + tr("Credit") + ":</b> " + FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, nValue) + "<br>";
