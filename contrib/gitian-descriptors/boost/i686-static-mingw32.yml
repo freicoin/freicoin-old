@@ -1,0 +1,94 @@
+---
+name: "boost"
+suites:
+- "precise"
+architectures:
+- "i386"
+packages:
+- "faketime"
+- "libtool"
+- "zip"
+reference_datetime: "2012-07-01 00:00:00"
+remotes: []
+files:
+- "boost_1_49_0.tar.bz2"
+- "toolchain-i686-static-mingw32-1213449-gitian.zip"
+script: |
+  export TARGET=i686-static-mingw32
+  export XCHAIN=$HOME/x-tools/target/$TARGET
+  export PREFIX=$HOME/sysroot
+  export BUILD=$HOME/build
+  
+  export GITIANDIR=`pwd`
+  
+  BOOST_VER=1_49_0
+  TOOLCHAIN_VER=1213449
+  
+  export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
+  export TZ=UTC
+  export FAKETIME=$REFERENCE_DATETIME
+  
+  mkdir -p "$PREFIX"
+  mkdir -p "$BUILD"/src
+  mkdir -p "$BUILD"/build
+  
+  mkdir -p "$XCHAIN"
+  unzip -d "$XCHAIN" "$GITIANDIR"/toolchain-${TARGET}-${TOOLCHAIN_VER}-gitian.zip
+  pushd "$XCHAIN"
+  export XCHAIN=`pwd`
+  popd
+  export PATH=$XCHAIN/bin:$XCHAIN/usr/bin:$PATH
+  
+  tar -C "$BUILD"/src -xf "$GITIANDIR"/boost_${BOOST_VER}.tar.bz2
+  pushd "$BUILD"/src/boost_${BOOST_VER}
+  cat >.patch <<EOF
+  --- a/boost/interprocess/detail/tmp_dir_helpers.hpp	2011-12-26 09:21:36.000000000 -0800
+  +++ b/boost/interprocess/detail/tmp_dir_helpers.hpp	2011-12-26 09:21:36.000000000 -0800
+  @@ -19,9 +19,9 @@
+   #include <string>
+   
+   #if defined(BOOST_INTERPROCESS_WINDOWS)
+  -   //#define BOOST_INTERPROCESS_HAS_WINDOWS_KERNEL_BOOTTIME
+  -   //#define BOOST_INTERPROCESS_HAS_KERNEL_BOOTTIME
+  -   //#include <boost/interprocess/detail/win32_api.hpp>
+  +   #define BOOST_INTERPROCESS_HAS_WINDOWS_KERNEL_BOOTTIME
+  +   #define BOOST_INTERPROCESS_HAS_KERNEL_BOOTTIME
+  +   #include <boost/interprocess/detail/win32_api.hpp>
+   #elif defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__) || defined(__APPLE__)
+      //#include <sys/sysctl.h>
+      //#if defined(CTL_KERN) && defined (KERN_BOOTTIME)" > useboottime.patch
+  EOF
+  patch -p1 <.patch
+  rm -f .patch
+  cat >user-config.jam <<EOF
+  using gcc : 4.7 : ${TARGET}-g++
+      :
+      <rc>${TARGET}-windres
+      <archiver>${TARGET}-ar
+      <cxxflags>-frandom-seed=boost1
+      ;
+  EOF
+  ./bootstrap.sh \
+    --without-icu
+  ./bjam \
+    release \
+    toolset=gcc \
+    target-os=windows \
+    threadapi=win32 \
+    threading=multi \
+    link=static \
+    --build-type=complete \
+    --user-config=user-config.jam \
+    --layout=tagged \
+    --without-mpi \
+    --without-python \
+    -sNO_BZIP2=1 \
+    -sNO_ZLIB=1 \
+    --prefix="$PREFIX" \
+    install
+  popd
+  
+  pushd "$PREFIX"
+  find * -not -type d -print0 | sort -z | xargs -0 \
+    zip -r "$OUTDIR"/boost-${TARGET}-${BOOST_VER}-gitian.zip
+  popd

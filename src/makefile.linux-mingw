@@ -25,7 +25,8 @@ LIBS= \
  -l boost_thread_win32-mt-s \
  -l db_cxx \
  -l ssl \
- -l crypto
+ -l crypto \
+ -l z
 
 DEFS=-D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -DBOOST_SPIRIT_THREADSAFE -DUSE_IPV6
 DEBUGFLAGS=-g
