@@ -401,7 +401,7 @@ public:
     std::vector<CTxIn> vin;
     std::vector<CTxOut> vout;
     unsigned int nLockTime;
-    int64 nRefHeight;
+    int32_t nRefHeight;
 
     // Denial-of-service detection:
     mutable int nDoS;
