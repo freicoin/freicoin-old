@@ -806,7 +806,7 @@ int64 GetAccountBalance(CWalletDB& walletdb, const string& strAccount, int nMinD
     }
 
     // Tally internal accounting entries
-    nBalance += walletdb.GetAccountCreditDebit(strAccount);
+    nBalance += walletdb.GetAccountCreditDebit(strAccount, nBestHeight);
 
     return nBalance;
 }
@@ -902,6 +902,7 @@ Value movecmd(const Array& params, bool fHelp)
     debit.nTime = nNow;
     debit.strOtherAccount = strTo;
     debit.strComment = strComment;
+    debit.nRefHeight = nBestHeight;
     walletdb.WriteAccountingEntry(debit);
 
     // Credit
@@ -911,6 +912,7 @@ Value movecmd(const Array& params, bool fHelp)
     credit.nTime = nNow;
     credit.strOtherAccount = strFrom;
     credit.strComment = strComment;
+    credit.nRefHeight = nBestHeight;
     walletdb.WriteAccountingEntry(credit);
 
     if (!walletdb.TxnCommit())

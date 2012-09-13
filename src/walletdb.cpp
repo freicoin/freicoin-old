@@ -47,14 +47,14 @@ bool CWalletDB::WriteAccountingEntry(const CAccountingEntry& acentry)
     return Write(boost::make_tuple(string("acentry"), acentry.strAccount, ++nAccountingEntryNumber), acentry);
 }
 
-int64 CWalletDB::GetAccountCreditDebit(const string& strAccount)
+int64 CWalletDB::GetAccountCreditDebit(const string& strAccount, int nBlockHeight)
 {
     list<CAccountingEntry> entries;
     ListAccountCreditDebit(strAccount, entries);
 
     int64 nCreditDebit = 0;
     BOOST_FOREACH (const CAccountingEntry& entry, entries)
-        nCreditDebit += entry.nCreditDebit;
+        nCreditDebit += GetTimeAdjustedValue(entry.nCreditDebit, nBlockHeight-entry.nRefHeight);
 
     return nCreditDebit;
 }
