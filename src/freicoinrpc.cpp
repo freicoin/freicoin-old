@@ -1316,6 +1316,7 @@ void AcentryToJSON(const CAccountingEntry& acentry, const string& strAccount, Ar
         entry.push_back(Pair("amount", ValueFromAmount(acentry.nCreditDebit)));
         entry.push_back(Pair("otheraccount", acentry.strOtherAccount));
         entry.push_back(Pair("comment", acentry.strComment));
+        entry.push_back(Pair("refheight", acentry.nRefHeight));
         ret.push_back(entry);
     }
 }
