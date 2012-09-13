@@ -831,17 +831,10 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy        = 2380952380962LL;
-    int64 nTotalCoins     =             0;
-
-    while ( nHeight/210000 ) {
-        nTotalCoins += nSubsidy * 210000;
-        nHeight     -=            210000;
-        nSubsidy     = nSubsidy >>     1;
-    }
-    nTotalCoins += nHeight * nSubsidy;
-
-    return nSubsidy + nFees + (nTotalCoins/1048576);
+    int64 nSubsidy = (MAX_MONEY/1048576);
+    if ( nHeight < 262500 )
+        nSubsidy += (262500-nHeight) * 6996713230545LL;
+    return nSubsidy + nFees;
 }
 
 static const int64 nTargetTimespan = 14 * 24 * 60 * 60; // two weeks
