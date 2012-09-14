@@ -668,6 +668,7 @@ public:
     int64 nTime;
     std::string strOtherAccount;
     std::string strComment;
+    int32_t nRefHeight;
 
     CAccountingEntry()
     {
@@ -681,6 +682,7 @@ public:
         strAccount.clear();
         strOtherAccount.clear();
         strComment.clear();
+        nRefHeight = 0;
     }
 
     IMPLEMENT_SERIALIZE
@@ -692,6 +694,7 @@ public:
         READWRITE(nTime);
         READWRITE(strOtherAccount);
         READWRITE(strComment);
+        READWRITE(nRefHeight);
     )
 };
 

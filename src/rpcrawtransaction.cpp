@@ -56,7 +56,7 @@ TxToJSON(const CTransaction& tx, const uint256 hashBlock, Object& entry)
     entry.push_back(Pair("txid", tx.GetHash().GetHex()));
     entry.push_back(Pair("version", tx.nVersion));
     entry.push_back(Pair("locktime", (boost::int64_t)tx.nLockTime));
-    entry.push_back(Pair("refHeight", (boost::int64_t)tx.nRefHeight));
+    entry.push_back(Pair("refHeight", (boost::int32_t)tx.nRefHeight));
     Array vin;
     BOOST_FOREACH(const CTxIn& txin, tx.vin)
     {
