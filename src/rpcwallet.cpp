@@ -656,20 +656,25 @@ Value sendmany(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendmany <fromaccount> {address:amount,...} [minconf=1] [comment]\n"
+            "sendmany <fromaccount> {address:amount,...} [refheight] [minconf=1] [comment]\n"
             "amounts are double-precision floating point numbers"
             + HelpRequiringPassphrase());
 
     string strAccount = AccountFromValue(params[0]);
     Object sendTo = params[1].get_obj();
+
+    int nRefHeight = nBestHeight;
+    if (params.size() > 2 && params[2].type() != null_type && !params[2].get_str().empty())
+        nRefHeight = atoi(params[2].get_str());
+
     int nMinDepth = 1;
-    if (params.size() > 2)
-        nMinDepth = params[2].get_int();
+    if (params.size() > 3)
+        nMinDepth = params[3].get_int();
 
     CWalletTx wtx;
     wtx.strFromAccount = strAccount;
-    if (params.size() > 3 && params[3].type() != null_type && !params[3].get_str().empty())
-        wtx.mapValue["comment"] = params[3].get_str();
+    if (params.size() > 4 && params[4].type() != null_type && !params[4].get_str().empty())
+        wtx.mapValue["comment"] = params[4].get_str();
 
     set<CFreicoinAddress> setAddress;
     vector<pair<CScript, mpq> > vecSend;
@@ -692,8 +697,6 @@ Value sendmany(const Array& params, bool fHelp)
 
         vecSend.push_back(make_pair(scriptPubKey, nAmount));
     }
-
-    int nRefHeight = nBestHeight;
 
     EnsureWalletIsUnlocked();
 
