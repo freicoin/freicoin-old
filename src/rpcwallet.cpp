@@ -246,7 +246,7 @@ Value sendtoaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddress <freicoinaddress> <amount> [comment] [comment-to]\n"
+            "sendtoaddress <freicoinaddress> <amount> [refheight] [comment] [comment-to]\n"
             "<amount> is a real and is rounded to the nearest 0.00000001"
             + HelpRequiringPassphrase());
 
@@ -257,14 +257,19 @@ Value sendtoaddress(const Array& params, bool fHelp)
     // Amount
     mpq nAmount = AmountFromValue(params[1]);
 
+	// RefHeigh
+    int nRefHeight = nBestHeight;
+
+    if (params.size() > 2 && params[2].type() != null_type && !params[2].get_str().empty())
+        nRefHeight = atoi(params[2].get_str());
+
     // Wallet comments
     CWalletTx wtx;
-    if (params.size() > 2 && params[2].type() != null_type && !params[2].get_str().empty())
-        wtx.mapValue["comment"] = params[2].get_str();
-    if (params.size() > 3 && params[3].type() != null_type && !params[3].get_str().empty())
-        wtx.mapValue["to"]      = params[3].get_str();
 
-    int nRefHeight = nBestHeight;
+    if (params.size() > 3 && params[3].type() != null_type && !params[3].get_str().empty())
+        wtx.mapValue["comment"] = params[3].get_str();
+    if (params.size() > 4 && params[4].type() != null_type && !params[4].get_str().empty())
+        wtx.mapValue["to"]      = params[4].get_str();
 
     if (pwalletMain->IsLocked())
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
