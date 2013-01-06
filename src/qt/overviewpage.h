@@ -29,7 +29,7 @@ public:
     void showOutOfSyncWarning(bool fShow);
 
 public slots:
-    void setBalance(const mpq& balance, const mpq& unconfirmedBalance, const mpq& immatureBalance);
+    void setBalance(const mpq& balance, const mpq& unconfirmedBalance, const mpq& immatureBalance, const mpq& demurrage);
     void setNumTransactions(int count);
 
 signals:
@@ -41,6 +41,7 @@ private:
     mpq currentBalance;
     mpq currentUnconfirmedBalance;
     mpq currentImmatureBalance;
+    mpq blockDemurrageRate;
 
     TxViewDelegate *txdelegate;
     TransactionFilterProxy *filter;
