@@ -143,6 +143,9 @@
         <iconset resource="../freicoin.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
+       <property name="shortcut">
+        <string>Alt+D</string>
+       </property>
       </widget>
      </item>
     </layout>

@@ -383,7 +383,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+72"/>
+        <location filename="../freicoingui.cpp" line="+74"/>
         <source>Freicoin</source>
         <translation type="unfinished"></translation>
     </message>
@@ -393,7 +393,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">Novčanik</translation>
     </message>
     <message>
-        <location line="+123"/>
+        <location line="+124"/>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Pregled</translation>
     </message>
@@ -403,22 +403,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">Prikaži opći pregled novčanika</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Send coins</source>
-        <translation type="unfinished">&amp;Slanje novca</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Send coins to a Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Receive coins</source>
-        <translation type="unfinished">&amp;Primanje novca</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Show the list of addresses for receiving payments</source>
         <translation type="unfinished">Prikaži popis adresa za primanje isplate</translation>
     </message>
@@ -433,9 +423,19 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">Pretraži povijest transakcija</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Address Book</source>
-        <translation type="unfinished">&amp;Adresar</translation>
+        <location line="-13"/>
+        <source>&amp;Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&amp;Receive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&amp;Contacts</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -484,7 +484,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Show / Hide</source>
+        <source>Show / &amp;Hide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -669,7 +669,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">Zadnji primljeni blok je generiran %1.</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+81"/>
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
         <translation type="unfinished">Ova transakcija je preko ograničenja veličine. Možete ju ipak poslati za naknadu od %1, koja se daje čvorovima koji procesiraju vaše transakcije i tako podržavate mrežu. Želite li platiti naknadu?</translation>
     </message>
@@ -816,12 +816,7 @@ Adresa:%4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Detach databases at shutdown</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+21"/>
+        <location line="+24"/>
         <source>&amp;Network</source>
         <translation type="unfinished"></translation>
     </message>
@@ -841,7 +836,12 @@ Adresa:%4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+10"/>
+        <source>D&amp;etach databases at shutdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
         <source>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -851,12 +851,7 @@ Adresa:%4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Connect through SOCKS proxy:</source>
-        <translation>&amp;Povezivanje putem SOCKS proxy-a:</translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <source>Proxy &amp;IP:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -896,12 +891,12 @@ Adresa:%4
         <translation>Prikaži samo ikonu u sistemskoj traci nakon minimiziranja prozora</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimiziraj u sistemsku traku umjesto u traku programa</translation>
+        <location line="+91"/>
+        <source>Display addresses in &amp;transaction list</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-81"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
         <translation>Minimizirati umjesto izaći iz aplikacije kada je prozor zatvoren. Kada je ova opcija omogućena, aplikacija će biti zatvorena tek nakon odabira Izlaz u izborniku.</translation>
     </message>
@@ -936,17 +931,22 @@ Adresa:%4
         <translation>&amp;Jedinica za prikazivanje iznosa:</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-182"/>
+        <source>Connect through &amp;SOCKS proxy:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+119"/>
+        <source>Minimize to the &amp;tray instead of the taskbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+76"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Izaberite željeni najmanji dio bitcoina koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Prikaži adrese u popisu transakcija</translation>
-    </message>
-    <message>
-        <location line="+71"/>
+        <location line="+83"/>
         <source>&amp;OK</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1289,8 +1289,8 @@ Adresa:%4
     </message>
     <message>
         <location line="+3"/>
-        <source>Clear &amp;All</source>
-        <translation>Obriši &amp;sve</translation>
+        <source>&amp;Clear All</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -1427,6 +1427,11 @@ Adresa:%4
         <translation>Ukloni ovog primatelja</translation>
     </message>
     <message>
+        <location line="+10"/>
+        <source>Alt+D</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation type="unfinished"></translation>
@@ -1441,12 +1446,12 @@ Adresa:%4
     </message>
     <message>
         <location line="+13"/>
-        <location line="+124"/>
+        <location line="+127"/>
         <source>&amp;Sign Message</source>
         <translation>&amp;Potpišite poruku</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="-121"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Možete potpisati poruke sa svojom adresom kako bi dokazali da ih posjedujete. Budite oprezni da ne potpisujete ništa mutno, jer bi vas phishing napadi mogli na prevaru natjerati da prepišete svoj identitet njima. Potpisujte samo detaljno objašnjene izjave sa kojima se slažete.</translation>
     </message>
@@ -1457,18 +1462,18 @@ Adresa:%4
     </message>
     <message>
         <location line="+10"/>
-        <location line="+203"/>
+        <location line="+206"/>
         <source>Choose an address from the address book</source>
         <translation>Odaberite adresu iz adresara</translation>
     </message>
     <message>
-        <location line="-193"/>
-        <location line="+203"/>
+        <location line="-196"/>
+        <location line="+206"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="-193"/>
+        <location line="-196"/>
         <source>Paste address from clipboard</source>
         <translation>Zalijepi adresu iz međuspremnika</translation>
     </message>
@@ -1488,12 +1493,23 @@ Adresa:%4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+10"/>
+        <source>Alt+Y</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Sign the message to prove you own this Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+20"/>
         <location line="+146"/>
+        <source>&amp;Clear All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-20"/>
         <source>Verify the message to ensure it was signed with the specified Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1503,13 +1519,7 @@ Adresa:%4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+146"/>
-        <source>Clear &amp;All</source>
-        <translation>Obriši &amp;sve</translation>
-    </message>
-    <message>
-        <location line="-87"/>
+        <location line="+62"/>
         <location line="+70"/>
         <source>&amp;Verify Message</source>
         <translation type="unfinished"></translation>

@@ -133,6 +133,9 @@
             <iconset resource="../freicoin.qrc">
              <normaloff>:/icons/editcopy</normaloff>:/icons/editcopy</iconset>
            </property>
+           <property name="shortcut">
+            <string>Alt+Y</string>
+           </property>
            <property name="autoDefault">
             <bool>false</bool>
            </property>
@@ -165,7 +168,7 @@
             <string>Reset all sign message fields</string>
            </property>
            <property name="text">
-            <string>Clear &amp;All</string>
+            <string>&amp;Clear All</string>
            </property>
            <property name="icon">
             <iconset resource="../freicoin.qrc">
@@ -311,7 +314,7 @@
             <string>Reset all verify message fields</string>
            </property>
            <property name="text">
-            <string>Clear &amp;All</string>
+            <string>&amp;Clear All</string>
            </property>
            <property name="icon">
             <iconset resource="../freicoin.qrc">

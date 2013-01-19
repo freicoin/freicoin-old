@@ -7,12 +7,12 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About Freicoin</source>
-        <translation type="unfinished"></translation>
+        <translation>Über Freicoin</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;Freicoin&lt;/b&gt; version</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Freicoin&lt;/b&gt; Version</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -24,7 +24,14 @@ The conceptual marriage of Gesell&apos;s Freigeld with Bitcoin is due to one ind
 The initial development of Freicoin was made possible through generous financial support from Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis, Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O&apos;Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk, and anonymous supporters.
 
 Last but certainly not least, we all owe a debt to the legacy of Silvio Gesell, as it is upon his theory of free money that Freicoin is built.</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright © 2009-2012 Die Bitcoinentwickler
+Copyright © 2011-2012 Die Freicoinentwickler
+
+Die konzeptuelle Verbindung von Gesll&apos;s Freigeld mit Bitcoin ist einer Person zu verdanken, ohne die dieses Projekt nie gestartet wäre: Jorge Timón. Die erste Version wäre ohne weitere Beiträge von den Entwicklern Mark Friedenbach, Matthew Redmond, Aaron Blumenshine und einem anonymen Beitrag nicht möglich gewesen.
+
+Die ursprüngliche Entwicklung von Freicoin wurde durch die grosszügige finanzielle Unterstützung von Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis, Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O&apos;Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk und anonymen Unterstützern ermöglicht. 
+
+Last but not least, verdanken wir es dem Vermächtnis von Silvio Gsell, dessen Theorie des freien Geldes die Grundlage für Freicoin war.</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -52,7 +59,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+6"/>
         <source>These are your Freicoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dies sind Ihre Freicoin-Adressen zum Empfangen von Zahlungen. Es steht Ihnen frei, jedem Absender eine Andere mitzuteilen, um einen besseren Überblick über eingehende Zahlungen zu erhalten.</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -72,7 +79,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+25"/>
         <source>Sign a message to prove you own a Freicoin address</source>
-        <translation type="unfinished"></translation>
+        <translation>Eine Nachricht signieren, um den Besitz einer Freicoin-Adresse zu beweisen</translation>
     </message>
     <message>
         <location line="-36"/>
@@ -97,7 +104,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+11"/>
         <source>Verify a message to ensure it was signed with a specified Freicoin address</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Nachricht signieren, um sicherzustellen, dass diese mit der angegebenen Freicoin-Adresse signiert wurde.</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -238,12 +245,12 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+0"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FREICOINS&lt;/b&gt;!</source>
-        <translation type="unfinished"></translation>
+        <translation>Warnung: Wenn Sie Ihre Brieftasche verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;ALLE IHRE FREICOINS VERLIEREN&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Freicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your freicoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin wird jetzt beendet, um den Verschlüsselungsprozess abzuschliessen. Bitte beachten Sie, dass die Verschlüsselung Ihrer Brieftasche nicht vollständig vor Diebstahl Ihrer Freicoins durch Schadsoftware schützt, die Ihren Computer befällt.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -322,7 +329,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+11"/>
         <source>&amp;Label</source>
-        <translation>&amp;Bezeichnung</translation>
+        <translation>Bezei&amp;chnung</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -332,7 +339,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+7"/>
         <source>&amp;Address</source>
-        <translation>&amp;Adresse</translation>
+        <translation>Adre&amp;sse</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -367,7 +374,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+5"/>
         <source>The entered address &quot;%1&quot; is not a valid Freicoin address.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die eingegebene Adresse &quot;%1&quot; ist keine gültige Freicoin Adresse.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -385,227 +392,227 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location filename="../freicoin.cpp" line="+109"/>
         <source>A fatal error occured. Freicoin can no longer continue safely and will quit.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ein schwerer Fehler liegt vor. Freicoin kann nicht länger sicher weiterlaufen und wird beendet. </translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+72"/>
+        <location filename="../freicoingui.cpp" line="+74"/>
         <source>Freicoin</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet</source>
-        <translation type="unfinished">Brieftasche</translation>
+        <translation>Brieftasche</translation>
     </message>
     <message>
-        <location line="+123"/>
+        <location line="+124"/>
         <source>&amp;Overview</source>
-        <translation type="unfinished">&amp;Übersicht</translation>
+        <translation>Über&amp;sicht</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show general overview of wallet</source>
-        <translation type="unfinished">Allgemeine Übersicht der Brieftasche anzeigen</translation>
+        <translation>Allgemeine Übersicht der Brieftasche anzeigen</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Send coins</source>
-        <translation type="unfinished">Bitcoins &amp;überweisen</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Send coins to a Freicoin address</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoins an eine Freicoin Adresse überweisen</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Receive coins</source>
-        <translation type="unfinished">Bitcoins &amp;empfangen</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Show the list of addresses for receiving payments</source>
-        <translation type="unfinished">Liste der Empfangsadressen anzeigen</translation>
+        <translation>Liste der Empfangsadressen anzeigen</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>&amp;Transactions</source>
-        <translation type="unfinished">&amp;Transaktionen</translation>
+        <translation>&amp;Transaktionen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Browse transaction history</source>
-        <translation type="unfinished">Transaktionsverlauf durchsehen</translation>
+        <translation>Transaktionsverlauf durchsehen</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Address Book</source>
-        <translation type="unfinished">&amp;Adressbuch</translation>
+        <location line="-13"/>
+        <source>&amp;Send</source>
+        <translation>&amp;Senden</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&amp;Receive</source>
+        <translation>&amp;Erhalten</translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&amp;Contacts</source>
+        <translation>&amp;Kontakte</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Edit the list of stored addresses and labels</source>
-        <translation type="unfinished">Liste der gespeicherten Zahlungsadressen und Bezeichnungen bearbeiten</translation>
+        <translation>Liste der gespeicherten Zahlungsadressen und Bezeichnungen bearbeiten</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>E&amp;xit</source>
-        <translation type="unfinished">&amp;Beenden</translation>
+        <translation>Bee&amp;nden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quit application</source>
-        <translation type="unfinished">Anwendung beenden</translation>
+        <translation>Applikation beenden</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;About Freicoin</source>
-        <translation type="unfinished"></translation>
+        <translation>Über &amp;Freicoin</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show information about Freicoin</source>
-        <translation type="unfinished"></translation>
+        <translation>Information über Freicoin anzeigen</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>About &amp;Qt</source>
-        <translation type="unfinished">Über &amp;Qt</translation>
+        <translation>Über &amp;Qt</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show information about Qt</source>
-        <translation type="unfinished">Informationen über Qt anzeigen</translation>
+        <translation>Information über Qt anzeigen</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
-        <translation type="unfinished">&amp;Erweiterte Einstellungen...</translation>
+        <translation>&amp;Einstellungen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Modify configuration options for Freicoin</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen für Freicoin verändern</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Show / Hide</source>
-        <translation type="unfinished">&amp;Anzeigen / Verstecken</translation>
+        <source>Show / &amp;Hide</source>
+        <translation>&amp;Anzeigen / Verbergen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Encrypt Wallet...</source>
-        <translation type="unfinished">Brieftasche &amp;verschlüsseln...</translation>
+        <translation>&amp;Brieftasche verschlüsseln...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Encrypt or decrypt wallet</source>
-        <translation type="unfinished">Brieftasche ent- oder verschlüsseln</translation>
+        <translation>Brieftasche ent- oder verschlüsseln</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Backup Wallet...</source>
-        <translation type="unfinished">Brieftasche &amp;sichern...</translation>
+        <translation>&amp;Brieftasche sichern</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Backup wallet to another location</source>
-        <translation type="unfinished">Eine Sicherungskopie der Brieftasche erstellen und abspeichern</translation>
+        <translation>Eine Sicherungskopie der Brieftasche erstellen und abspeichern</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Change Passphrase...</source>
-        <translation type="unfinished">Passphrase &amp;ändern...</translation>
+        <translation>&amp;Passphrase ändern...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation type="unfinished">Ändert die Passphrase, die für die Verschlüsselung der Brieftasche benutzt wird</translation>
+        <translation>Ändert die Passphrase, die für die Verschlüsselung der Brieftasche benutzt wird</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Sign &amp;message...</source>
-        <translation type="unfinished">Nachricht s&amp;ignieren...</translation>
+        <translation>Nachricht &amp;signieren</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Verify message...</source>
-        <translation type="unfinished">Nachricht &amp;verifizieren...</translation>
+        <translation>Nachricht &amp;verifizieren</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Export...</source>
-        <translation type="unfinished">&amp;Exportieren...</translation>
+        <translation>&amp;Exportieren</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Export the data in the current tab to a file</source>
-        <translation type="unfinished">Daten der aktuellen Ansicht in eine Datei exportieren</translation>
+        <translation>Daten der aktuellen Ansicht in eine Datei exportieren</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Debug window</source>
-        <translation type="unfinished">&amp;Debugfenster</translation>
+        <translation>&amp;Debugfenster</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Open debugging and diagnostic console</source>
-        <translation type="unfinished">Debugging- und Diagnosekonsole öffnen</translation>
+        <translation>Debugging- und Diagnosekonsole öffnen</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>&amp;File</source>
-        <translation type="unfinished">&amp;Datei</translation>
+        <translation>&amp;Datei</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>&amp;Settings</source>
-        <translation type="unfinished">&amp;Einstellungen</translation>
+        <translation>&amp;Einstellungen</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Help</source>
-        <translation type="unfinished">&amp;Hilfe</translation>
+        <translation>&amp;Hilfe</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Tabs toolbar</source>
-        <translation type="unfinished">Registerkartenleiste</translation>
+        <translation>Registerkartenleiste</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Actions toolbar</source>
-        <translation type="unfinished">Aktionssymbolleiste</translation>
+        <translation>Aktionssymbolleiste</translation>
     </message>
     <message>
         <location line="+13"/>
         <location line="+9"/>
         <source>[testnet]</source>
-        <translation type="unfinished">[Testnetz]</translation>
+        <translation>[Testnetz]</translation>
     </message>
     <message>
         <location line="+0"/>
         <location line="+60"/>
         <source>Freicoin client</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin Client</translation>
     </message>
     <message numerus="yes">
         <location line="+69"/>
         <source>%n active connection(s) to Freicoin network</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n aktive Verbindung zum Freicoin-Netzwerk</numerusform>
+            <numerusform>%n aktive Verbindungen zum Freicoin-Netzwerk</numerusform>
         </translation>
     </message>
     <message>
         <location line="+24"/>
         <source>Synchronizing with network...</source>
-        <translation type="unfinished">Synchronisiere mit Netzwerk...</translation>
+        <translation>Synchronisiere mit Netzwerk...</translation>
     </message>
     <message numerus="yes">
         <location line="+2"/>
         <source>~%n block(s) remaining</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>~%n Block verbleibend</numerusform>
             <numerusform>~%n Blöcke verbleibend</numerusform>
         </translation>
@@ -613,17 +620,17 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+6"/>
         <source>Downloaded %1 of %2 blocks of transaction history (%3% done).</source>
-        <translation type="unfinished">%1 von %2 Blöcken des Transaktionsverlaufs heruntergeladen (%3% fertig).</translation>
+        <translation>%1 von %2 Blöcken des Transaktionsverlaufs heruntergeladen (%3% fertig).</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Downloaded %1 blocks of transaction history.</source>
-        <translation type="unfinished">%1 Blöcke des Transaktionsverlaufs heruntergeladen.</translation>
+        <translation>%1 Blöcke des Transaktionsverlaufs heruntergeladen</translation>
     </message>
     <message numerus="yes">
         <location line="+22"/>
         <source>%n second(s) ago</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>vor %n Sekunde</numerusform>
             <numerusform>vor %n Sekunden</numerusform>
         </translation>
@@ -631,7 +638,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message numerus="yes">
         <location line="+4"/>
         <source>%n minute(s) ago</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>vor %n Minute</numerusform>
             <numerusform>vor %n Minuten</numerusform>
         </translation>
@@ -639,7 +646,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s) ago</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>vor %n Stunde</numerusform>
             <numerusform>vor %n Stunden</numerusform>
         </translation>
@@ -647,7 +654,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s) ago</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>vor %n Tag</numerusform>
             <numerusform>vor %n Tagen</numerusform>
         </translation>
@@ -655,37 +662,37 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     <message>
         <location line="+6"/>
         <source>Up to date</source>
-        <translation type="unfinished">Auf aktuellem Stand</translation>
+        <translation>Auf aktuellem Stand</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Catching up...</source>
-        <translation type="unfinished">Hole auf...</translation>
+        <translation>Hole auf...</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Last received block was generated %1.</source>
-        <translation type="unfinished">Der letzte empfangene Block wurde %1 generiert.</translation>
+        <translation>Der letzte empfangene Block wurde vor %1 generiert.</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+81"/>
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
-        <translation type="unfinished">Die Transaktion übersteigt das Größenlimit. Sie können sie trotzdem senden, wenn Sie eine zusätzliche Transaktionsgebühr in Höhe von %1 zahlen. Diese wird an die Knoten verteilt, die Ihre Transaktion bearbeiten und unterstützt damit das Bitcoin-Netzwerk.&lt;br&gt;&lt;br&gt;Möchten Sie die Gebühr bezahlen?</translation>
+        <translation>Die Transaktion übersteigt das Grössenlimit. Sie können sie trotzdem senden, wenn Sie eine zusätzliche Transaktionsgebühr in Höhe von %1 zahlen. Diese wird an die Knoten verteilt, die Ihre Transaktion bearbeiten und unterstützt damit das Netzwerk. Möchten Sie die Gebühr bezahlen?</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Confirm transaction fee</source>
-        <translation type="unfinished">Transaktionsgebühr bestätigen</translation>
+        <translation>Transaktionsgebühr bestätigen</translation>
     </message>
     <message>
         <location line="+28"/>
         <source>Sent transaction</source>
-        <translation type="unfinished">Gesendete Transaktion</translation>
+        <translation>Gesendete Transaktion</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Incoming transaction</source>
-        <translation type="unfinished">Eingehende Transaktion</translation>
+        <translation>Eingehende Transaktion</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -694,52 +701,53 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation type="unfinished">Datum: %1
-Betrag: %2
+        <translation>Datum: %1
+Summe: %2
 Typ: %3
-Adresse: %4</translation>
+Adresse: %4
+</translation>
     </message>
     <message>
         <location line="+100"/>
         <location line="+15"/>
         <source>URI handling</source>
-        <translation type="unfinished">URI Verarbeitung</translation>
+        <translation>URI Handling</translation>
     </message>
     <message>
         <location line="-15"/>
         <location line="+15"/>
         <source>URI can not be parsed! This can be caused by an invalid Freicoin address or malformed URI parameters.</source>
-        <translation type="unfinished"></translation>
+        <translation>URI kann nicht geparst werden! Dies kann durch eine ungültige Freicoin-Adresse oder ungültige URI Parameter verursacht werden.</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation type="unfinished">Brieftasche ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell &lt;b&gt;entsperrt&lt;/b&gt;</translation>
+        <translation>Brieftasche ist nicht &lt;b&gt;verschlüsselt&lt;/b&gt; und &lt;b&gt;entsperrt&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+8"/>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation type="unfinished">Brieftasche ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell &lt;b&gt;gesperrt&lt;/b&gt;</translation>
+        <translation>Brieftasche ist &lt;b&gt;verschlüsselt&lt;/b&gt; und &lt;b&gt;gesperrt&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+23"/>
         <source>Backup Wallet</source>
-        <translation type="unfinished">Brieftasche sichern</translation>
+        <translation>Brieftasche sichern</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation type="unfinished">Brieftaschendaten (*.dat)</translation>
+        <translation>Brieftaschendaten (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation type="unfinished">Sicherung der Brieftasche fehlgeschlagen</translation>
+        <translation>Speicherung fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>There was an error trying to save the wallet data to the new location.</source>
-        <translation type="unfinished">Fehler beim Abspeichern der Sicherungskopie der Brieftasche.</translation>
+        <translation>Fehler beim Abspeichern der Sicherungskopie der Brieftasche.</translation>
     </message>
 </context>
 <context>
@@ -753,7 +761,7 @@ Adresse: %4</translation>
         <location line="+0"/>
         <location line="+12"/>
         <source>Freicoin-Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin-Qt</translation>
     </message>
     <message>
         <location line="-10"/>
@@ -796,7 +804,7 @@ Adresse: %4</translation>
     <message>
         <location line="+16"/>
         <source>&amp;Main</source>
-        <translation>&amp;Allgemein</translation>
+        <translation>Allge&amp;mein</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -814,14 +822,9 @@ Adresse: %4</translation>
         <translation>Block- und Adressdatenbank beim Beenden trennen. Diese können so in ein anderes Datenverzeichnis verschoben werden, die zum Beenden benötigte Zeit wird aber verlängert. Die Datenbank der Brieftasche wird immer getrennt.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Detach databases at shutdown</source>
-        <translation>Datenbanken beim Beenden &amp;trennen</translation>
-    </message>
-    <message>
-        <location line="+21"/>
+        <location line="+24"/>
         <source>&amp;Network</source>
-        <translation>&amp;Netzwerk</translation>
+        <translation>Netz&amp;werk</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -831,30 +834,30 @@ Adresse: %4</translation>
     <message>
         <location line="-43"/>
         <source>Automatically start Freicoin after logging in to the system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin nach der Anmeldung am System automatisch ausführen.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Start Freicoin on system login</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Starte Freicoin nach Systemanmeldung</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+10"/>
+        <source>D&amp;etach databases at shutdown</source>
+        <translation>Datenbanken beim Beenden &amp;trennen</translation>
+    </message>
+    <message>
+        <location line="+27"/>
         <source>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatisch den Freicoin Clientport auf dem Router öffnen. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Connect to the Freicoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation type="unfinished"></translation>
+        <translation>Über einen Socks Proxy mit dem Freicoin-Netzwerk verbinden (z.B. beim Verbinden über Tor).</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Connect through SOCKS proxy:</source>
-        <translation>Über einen SOCKS-Proxy &amp;verbinden:</translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <source>Proxy &amp;IP:</source>
         <translation>Proxy-&amp;IP:</translation>
     </message>
@@ -866,7 +869,7 @@ Adresse: %4</translation>
     <message>
         <location line="+7"/>
         <source>&amp;Port:</source>
-        <translation>&amp;Port:</translation>
+        <translation>Po&amp;rt:</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -894,24 +897,24 @@ Adresse: %4</translation>
         <translation>Nur ein Symbol im Infobereich anzeigen, nachdem das Programmfenster minimiert wurde.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>In den Infobereich anstatt in die Taskleiste &amp;minimieren</translation>
+        <location line="+91"/>
+        <source>Display addresses in &amp;transaction list</source>
+        <translation>Adressen in der &amp;Transaktionsliste anzeigen</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-81"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimiert die Anwendung anstatt sie zu beenden wenn das Fenster geschlossen wird. Wenn dies aktiviert ist, müssen Sie das Programm über &quot;Beenden&quot; im Menü schließen.</translation>
+        <translation>Minimiert die Anwendung anstatt sie zu beenden wenn das Fenster geschlossen wird. Wenn dies aktiviert ist, müssen Sie das Programm über &quot;Beenden&quot; im Menü schliessen.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>M&amp;inimize on close</source>
-        <translation>Beim Schließen m&amp;inimieren</translation>
+        <translation>Beim &amp;Schliessen minimieren</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>&amp;Display</source>
-        <translation>&amp;Anzeige</translation>
+        <translation>An&amp;zeige</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -921,12 +924,12 @@ Adresse: %4</translation>
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Freicoin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Legt die Sprache der Benutzeroberfläche fest. Diese Einstellung wird erst nach einem Neustart von Freicoin aktiv.</translation>
     </message>
     <message>
         <location line="+33"/>
         <source>Whether to show Freicoin addresses in the transaction list or not.</source>
-        <translation type="unfinished"></translation>
+        <translation>Legt fest, ob Freicoin-Adressen in der Transaktionsliste angezeigt werden.</translation>
     </message>
     <message>
         <location line="-22"/>
@@ -934,17 +937,22 @@ Adresse: %4</translation>
         <translation>&amp;Einheit der Beträge:</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-182"/>
+        <source>Connect through &amp;SOCKS proxy:</source>
+        <translation>Über einen &amp;SOCKS-Proxy verbinden:</translation>
+    </message>
+    <message>
+        <location line="+119"/>
+        <source>Minimize to the &amp;tray instead of the taskbar</source>
+        <translation>In den &amp;Infobereich anstatt in die Taskleiste minimieren</translation>
+    </message>
+    <message>
+        <location line="+76"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Wählen Sie die Standarduntereinheit, die in der Benutzeroberfläche und beim Überweisen von Bitcoins angezeigt werden soll.</translation>
+        <translation>Wählen Sie die Standarduntereinheit, die in der Benutzeroberfläche und beim Überweisen von Freicoins angezeigt werden soll.</translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>Adressen in der Transaktionsliste &amp;anzeigen</translation>
-    </message>
-    <message>
-        <location line="+71"/>
+        <location line="+83"/>
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
@@ -956,7 +964,7 @@ Adresse: %4</translation>
     <message>
         <location line="+10"/>
         <source>&amp;Apply</source>
-        <translation>&amp;Übernehmen</translation>
+        <translation>Über&amp;nehmen</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="+55"/>
@@ -973,7 +981,7 @@ Adresse: %4</translation>
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting Freicoin.</source>
-        <translation type="unfinished"></translation>
+        <translation>Diese Einstellung wird erst nach einem Neustrat von Freicoin aktiv.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1012,7 +1020,7 @@ Adresse: %4</translation>
         <location line="+7"/>
         <location line="+183"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Freicoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished"></translation>
+        <translation>Die angezeigten Informationen sind möglicherweise nicht mehr aktuell. Ihre Brieftasche wird automatisch synchronisiert, nachdem eine Verbindung zum Freicoin-Netzwerk hergestellt wurde. Dieser Prozess ist jedoch derzeit noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <location line="-66"/>
@@ -1143,12 +1151,12 @@ Adresse: %4</translation>
     <message>
         <location line="-10"/>
         <source>Freicoin - Debug window</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin - Debugfenster</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Freicoin Core</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin-Kern</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -1198,12 +1206,12 @@ Adresse: %4</translation>
     <message>
         <location line="+49"/>
         <source>Open the Freicoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffnet die Freicoin-Debugprotokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Open</source>
-        <translation>&amp;Öffnen</translation>
+        <translation>Ö&amp;ffnen</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -1213,7 +1221,7 @@ Adresse: %4</translation>
     <message>
         <location line="+7"/>
         <source>Show the Freicoin-Qt help message to get a list with possible Freicoin command-line options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeige die Freicoin-Qt-Hilfsnachricht, um eine Liste mit möglichen Kommandozeilenoptionen zu erhalten.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1243,7 +1251,7 @@ Adresse: %4</translation>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
         <source>Welcome to the Freicoin RPC console.</source>
-        <translation type="unfinished"></translation>
+        <translation>Willkommen in der Freicoin-RPC-Konsole.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1268,7 +1276,7 @@ Adresse: %4</translation>
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Bitcoins überweisen</translation>
+        <translation>Freicoins überweisen</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1278,7 +1286,7 @@ Adresse: %4</translation>
     <message>
         <location line="+3"/>
         <source>Add &amp;Recipient</source>
-        <translation>Empfänger &amp;hinzufügen</translation>
+        <translation>Empfänger hinzu&amp;fügen</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -1287,7 +1295,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Clear &amp;All</source>
+        <source>&amp;Clear All</source>
         <translation>&amp;Zurücksetzen</translation>
     </message>
     <message>
@@ -1298,7 +1306,7 @@ Adresse: %4</translation>
     <message>
         <location line="+10"/>
         <source>123.456 FRC</source>
-        <translation type="unfinished"></translation>
+        <translation>123.456 FRC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1308,7 +1316,7 @@ Adresse: %4</translation>
     <message>
         <location line="+3"/>
         <source>S&amp;end</source>
-        <translation>&amp;Überweisen</translation>
+        <translation>Über&amp;weisen</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-59"/>
@@ -1363,7 +1371,7 @@ Adresse: %4</translation>
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fehler: Die Transaktion wurde abgelehnt. Dies kann passieren, wenn einige Bitcoins aus Ihrer Brieftasche bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie Ihrer wallet.dat genutzt, die Bitcoins dort ausgegeben haben und dies daher in der derzeit aktiven Brieftasche nicht vermerkt ist.</translation>
+        <translation>Fehler: Die Transaktion wurde abgelehnt. Dies kann passieren, wenn einige Freicoins aus Ihrer Brieftasche bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie Ihrer wallet.dat genutzt, die Freicoins dort ausgegeben haben und dies daher in der derzeit aktiven Brieftasche nicht vermerkt ist.</translation>
     </message>
 </context>
 <context>
@@ -1381,7 +1389,7 @@ Adresse: %4</translation>
     <message>
         <location line="+13"/>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Empfänger:</translation>
+        <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
         <location line="+24"/>
@@ -1392,7 +1400,7 @@ Adresse: %4</translation>
     <message>
         <location line="+9"/>
         <source>&amp;Label:</source>
-        <translation>&amp;Bezeichnung:</translation>
+        <translation>Bezei&amp;chnung:</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -1425,9 +1433,14 @@ Adresse: %4</translation>
         <translation>Diesen Empfänger entfernen</translation>
     </message>
     <message>
+        <location line="+10"/>
+        <source>Alt+D</source>
+        <translation>Alt+D</translation>
+    </message>
+    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin-Adresse eingeben (z.B. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1439,12 +1452,12 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location line="+124"/>
+        <location line="+127"/>
         <source>&amp;Sign Message</source>
         <translation>Nachricht &amp;signieren</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="-121"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Sie können Nachrichten mit Ihren Adressen signieren, um den Besitz dieser Adressen zu beweisen. Bitte nutzen Sie diese Funktion mit Vorsicht und nehmen Sie sich vor Phishingangriffen in Acht. Signieren Sie nur Nachrichten, mit denen Sie vollständig einverstanden sind.</translation>
     </message>
@@ -1455,18 +1468,18 @@ Adresse: %4</translation>
     </message>
     <message>
         <location line="+10"/>
-        <location line="+203"/>
+        <location line="+206"/>
         <source>Choose an address from the address book</source>
         <translation>Eine Adresse aus dem Adressbuch wählen</translation>
     </message>
     <message>
-        <location line="-193"/>
-        <location line="+203"/>
+        <location line="-196"/>
+        <location line="+206"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="-193"/>
+        <location line="-196"/>
         <source>Paste address from clipboard</source>
         <translation>Adresse aus der Zwischenablage einfügen</translation>
     </message>
@@ -1486,14 +1499,25 @@ Adresse: %4</translation>
         <translation>Aktuelle Signatur in die Zwischenablage kopieren</translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>Sign the message to prove you own this Freicoin address</source>
-        <translation type="unfinished"></translation>
+        <location line="+10"/>
+        <source>Alt+Y</source>
+        <translation>Alt+Y</translation>
     </message>
     <message>
+        <location line="+14"/>
+        <source>Sign the message to prove you own this Freicoin address</source>
+        <translation>Die Nachricht signieren, um den Besitz dieser Freicoin-Adresse zu beweisen</translation>
+    </message>
+    <message>
+        <location line="+20"/>
         <location line="+146"/>
+        <source>&amp;Clear All</source>
+        <translation>&amp;Zurücksetzen</translation>
+    </message>
+    <message>
+        <location line="-20"/>
         <source>Verify the message to ensure it was signed with the specified Freicoin address</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Nachricht verifizieren, um sicherzustellen, dass diese mit der angegebenen Freicoin-Adresse signiert wurde</translation>
     </message>
     <message>
         <location line="-129"/>
@@ -1501,13 +1525,7 @@ Adresse: %4</translation>
         <translation>Alle Nachricht signieren Felder zurücksetzen</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+146"/>
-        <source>Clear &amp;All</source>
-        <translation>&amp;Zurücksetzen</translation>
-    </message>
-    <message>
-        <location line="-87"/>
+        <location line="+62"/>
         <location line="+70"/>
         <source>&amp;Verify Message</source>
         <translation>Nachricht &amp;verifizieren</translation>
@@ -1536,12 +1554,12 @@ Adresse: %4</translation>
         <location line="-1"/>
         <location line="+3"/>
         <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin-Adresse eingeben (z.B. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Enter Freicoin signature</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin-Signatur eingeben</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1745,7 +1763,7 @@ Adresse: %4</translation>
     <message>
         <location line="+2"/>
         <source>Reference Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Referenzhöhe</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1755,7 +1773,7 @@ Adresse: %4</translation>
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Generierte Bitcoins müssen 120 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block generierten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in &quot;nicht angenommen&quot; geändert und der Betrag wird nicht verfügbar werden. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich generiert.</translation>
+        <translation>Generierte Freicoins müssen 120 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block generierten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in &quot;nicht angenommen&quot; geändert und der Betrag wird nicht verfügbar werden. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich generiert.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1836,7 +1854,7 @@ Adresse: %4</translation>
     <message>
         <location line="+0"/>
         <source>Ref-height</source>
-        <translation type="unfinished"></translation>
+        <translation>Ref-Höhe</translation>
     </message>
     <message numerus="yes">
         <location line="+57"/>
@@ -1942,7 +1960,7 @@ Adresse: %4</translation>
     <message>
         <location line="+2"/>
         <source>Reference block number that amount is pegged to.</source>
-        <translation type="unfinished"></translation>
+        <translation>Referenz-Blocknummer an die dieser Betrag gebunden ist.</translation>
     </message>
 </context>
 <context>
@@ -2016,12 +2034,12 @@ Adresse: %4</translation>
     <message>
         <location line="+7"/>
         <source>Min amount</source>
-        <translation>Minimaler Betrag</translation>
+        <translation>Min. Betrag</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Min height</source>
-        <translation type="unfinished"></translation>
+        <translation>Min. Höhe</translation>
     </message>
     <message>
         <location line="+34"/>
@@ -2134,611 +2152,618 @@ rpcpassword=%s
 (you do not need to remember this password)
 If the file does not exist, create it with owner-readable-only file permissions.
 </source>
-        <translation type="unfinished"></translation>
+        <translation>%s, Sie müssen den Wert rpcpasswort in der Konfigurationsdatei angeben:
+%s
+Es wird empfohlen das folgende Zufallspasswort zu verwenden:
+rpcuser=freicoinrpc
+rpcpassword=%s
+(Sie müssen sich dieses Passwort nicht merken!)
+Falls die Konfigurationsdatei nicht existiert, erzeugen Sie diese bitte mit Leserechten nur für den Dateibesitzer.
+</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Acceptable ciphers (default: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</source>
-        <translation type="unfinished">Akzeptierte Chiffren (Standard: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
+        <translation>Akzeptierte Chiffren (Standard: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
-        <translation type="unfinished">Beim Einrichten des abzuhörenden RPC-Ports %u für IPv4 ist ein Fehler aufgetreten: %s</translation>
+        <translation>Beim Einrichten des abzuhörenden RPC-Ports %u für IPv4 ist ein Fehler aufgetreten: %s</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Beim Einrichten des abzuhörenden RPC-Ports %u für IPv6 ist ein Fehler aufgetreten, daher wird auf IPv4 zurückgegriffen: %s</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Cannot obtain a lock on data directory %s.  Freicoin is probably already running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Datenverzeichnis %s kann nicht gesperrt werden. Evtl. wurde Freicoin bereits gestartet.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Detach block and address databases. Increases shutdown time (default: 0)</source>
-        <translation type="unfinished">Block- und Adressdatenbank beim Beenden trennen. Verlängert, die zum Beenden benötigte Zeit (Standard: 0)</translation>
+        <translation>Block- und Adressdatenbank beim Beenden trennen. Verlängert, die zum Beenden benötigte Zeit (Standard: 0)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fehler beim Initialisieren der Datenbankumgebung %s! Um sie wiederherzustellen, legen sie eine Sicherungskopie dieses Verzeichnisses an und entfernen Sie alle Dateien, ausgenommen wallet.dat.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation type="unfinished">Fehler: Die Transaktion wurde abgelehnt. Dies kann passieren, wenn einige Bitcoins aus Ihrer Brieftasche bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie Ihrer wallet.dat genutzt, die Bitcoins dort ausgegeben haben und dies daher in der derzeit aktiven Brieftasche nicht vermerkt ist.</translation>
+        <translation>Fehler: Die Transaktion wurde abgelehnt. Dies kann passieren, wenn einige Freicoins aus Ihrer Brieftasche bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie Ihrer wallet.dat genutzt, die Freicoins dort ausgegeben haben und dies daher in der derzeit aktiven Brieftasche nicht vermerkt ist.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds  </source>
-        <translation type="unfinished">Fehler: Diese Transaktion benötigt aufgrund ihres Betrags, ihrer Komplexität oder der Nutzung kürzlich erhaltener Zahlungen eine Transaktionsgebühr in Höhe von mindestens %s.</translation>
+        <translation>Fehler: Diese Transaktion benötigt aufgrund ihres Betrags, ihrer Komplexität oder der Nutzung kürzlich erhaltener Zahlungen eine Transaktionsgebühr in Höhe von mindestens %s.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation type="unfinished">Kommando ausführen wenn der beste Block wechselt (%s im Kommando wird durch den Hash des Blocks ersetzt)</translation>
+        <translation>Kommando ausführen wenn der beste Block wechselt (%s im Kommando wird durch den Hash des Blocks ersetzt)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8638 or testnet: 18638)</source>
-        <translation type="unfinished">&lt;port&gt; nach JSON-RPC-Verbindungen abhören (Standard: 8638 oder Testnetz: 18638)</translation>
+        <translation>&lt;port&gt; nach JSON-RPC-Verbindungen abhören (Standard: 8638 oder Testnetz: 18638)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
-        <translation type="unfinished">Anzahl Sekunden, während denen sich nicht konform verhaltenden Gegenstellen die Wiederverbindung verweigert wird (Standard: 86400)</translation>
+        <translation>Anzahl Sekunden, während denen sich nicht konform verhaltenden Gegenstellen die Wiederverbindung verweigert wird (Standard: 86400)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
-        <translation type="unfinished">Maximale Größe von &quot;high-priority/low-fee&quot;-Transaktionen in Byte festlegen (Standard: 27000)</translation>
+        <translation>Maximale Größe von &quot;high-priority/low-fee&quot;-Transaktionen in Byte festlegen (Standard: 27000)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Unable to bind to %s on this computer. Freicoin is probably already running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kann auf diesem Computer nicht an %s binden. Evtl. wurde Freicoin bereits gestartet.</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation type="unfinished">Warnung: -paytxfee ist auf einen sehr hohen Wert festgelegt! Dies ist die Gebühr die beim Senden einer Transaktion fällig wird.</translation>
+        <translation>Warnung: -paytxfee ist auf einen sehr hohen Wert festgelegt! Dies ist die Gebühr die beim Senden einer Transaktion fällig wird.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: Displayed transactions may not be correct! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation type="unfinished">Warnung: Angezeigte Transaktionen sind evtl. nicht korrekt! Sie oder die anderen Knoten müssen unter Umständen (den Client) aktualisieren.</translation>
+        <translation>Warnung: Angezeigte Transaktionen sind evtl. nicht korrekt! Sie oder die anderen Knoten müssen unter Umständen (den Client) aktualisieren.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Freicoin will not work properly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Warnung: Bitte korrigieren Sie die Datums- und Uhrzeiteinstellungen Ihres Computers, da Freicoin ansonsten nicht ordnungsgemäss funktionieren wird!</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Warnung: Fehler beim Lesen von wallet.dat! Alle Schlüssel lassen sich korrekt lesen, aber Transaktionsdaten oder Adressbucheinträge könnten fehlen oder Fehler enthalten.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation type="unfinished"></translation>
+        <translation>Warnung: wallet.dat ist beschädigt, Daten gerettet! Originale wallet.dat wurde als wallet.{timestamp}.bak in %s; gespeichert; wenn ihr Kontostand oder ihre Transaktionen Fehler enthalten, sollten Sie die Datei aus einer Sicherungsdatei wiederherstellen.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>
-        <translation type="unfinished">Sie müssen den Wert rpcpassword=&lt;passwort&gt; in der Konfigurationsdatei angeben:
+        <translation>Sie müssen den Wert rpcpassword=&lt;passwort&gt; in der Konfigurationsdatei angeben:
 %s
 Falls die Konfigurationsdatei nicht existiert, erzeugen Sie diese bitte mit Leserechten nur für den Dateibesitzer.</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Accept command line and JSON-RPC commands</source>
-        <translation type="unfinished">Kommandozeilenbefehle und JSON-RPC-Befehle annehmen</translation>
+        <translation>Kommandozeilenbefehle und JSON-RPC-Befehle annehmen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation type="unfinished">Eingehende Verbindungen annehmen (Standard: 1, wenn nicht -proxy oder -connect)</translation>
+        <translation>Eingehende Verbindungen annehmen (Standard: 1, wenn nicht -proxy oder -connect)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation type="unfinished">Mit dem Knoten verbinden und versuchen die Verbindung aufrecht zu halten</translation>
+        <translation>Mit dem Knoten verbinden und versuchen die Verbindung aufrecht zu halten</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation type="unfinished">Erlaube DNS-Namensauflösung für -addnode, -seednode und -connect</translation>
+        <translation>Erlaube DNS-Namensauflösung für -addnode, -seednode und -connect</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
-        <translation type="unfinished">JSON-RPC-Verbindungen von der angegebenen IP-Adresse erlauben</translation>
+        <translation>JSON-RPC-Verbindungen von der angegebenen IP-Adresse erlauben</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation type="unfinished"></translation>
+        <translation>Versuche private Schlüssel einer beschädigten wallet.dat wiederherzustellen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Bind to given address. Use [host]:port notation for IPv6</source>
-        <translation type="unfinished">An die angegebene Adresse binden. Benutze [Host]:Port Schreibweise für IPv6</translation>
+        <translation>An die angegebene Adresse binden. Benutze [host]:port Schreibweise für IPv6</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Block creation options:</source>
-        <translation type="unfinished">Blockerzeugungsoptionen:</translation>
+        <translation>Blockerzeugungsoptionen:</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Cannot downgrade wallet</source>
-        <translation type="unfinished">Brieftasche kann nicht auf eine ältere Version herabgestuft werden</translation>
+        <translation>Brieftasche kann nicht auf eine ältere Version herabgestuft werden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Cannot initialize keypool</source>
-        <translation type="unfinished">Schlüsselpool kann nicht initialisiert werden</translation>
+        <translation>Schlüsselpool kann nicht initialisiert werden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation type="unfinished">Kann Adresse in -bind nicht auflösen: &apos;%s&apos;</translation>
+        <translation>Kann Adresse in -bind nicht auflösen: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation type="unfinished">Kann Adresse in -externalip nicht auflösen: &apos;%s&apos;</translation>
+        <translation>Kann Adresse in -externalip nicht auflösen: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Cannot write default address</source>
-        <translation type="unfinished">Standardadresse kann nicht geschrieben werden</translation>
+        <translation>Standardadresse kann nicht geschrieben werden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Connect only to the specified node(s)</source>
-        <translation type="unfinished">Nur mit dem/den angegebenen Knoten verbinden</translation>
+        <translation>Nur mit dem/den angegebenen Knoten verbinden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Connect through socks proxy</source>
-        <translation type="unfinished">Über einen SOCKS-Proxy verbinden</translation>
+        <translation>Über einen SOCKS-Proxy verbinden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation type="unfinished">Mit dem Knoten verbinden um Adressen von Gegenstellen abzufragen, danach trennen</translation>
+        <translation>Mit dem Knoten verbinden um Adressen von Gegenstellen abzufragen, danach trennen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation type="unfinished">Eigene IP-Adresse erkennen (Standard: 1, wenn abgehört wird und nicht -externalip)</translation>
+        <translation>Eigene IP-Adresse erkennen (Standard: 1, wenn abgehört wird und nicht -externalip)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Don&apos;t generate coins</source>
-        <translation type="unfinished">Keine Bitcoins generieren</translation>
+        <translation>Keine Freicoins erzeugen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Done loading</source>
-        <translation type="unfinished">Laden abgeschlossen</translation>
+        <translation>Laden abgeschlossen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error loading blkindex.dat</source>
-        <translation type="unfinished">Fehler beim Laden von blkindex.dat</translation>
+        <translation>Fehler beim Laden von blkindex.dat</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error loading wallet.dat</source>
-        <translation type="unfinished">Fehler beim Laden von wallet.dat (Brieftasche)</translation>
+        <translation>Fehler beim Laden von wallet.dat</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation type="unfinished">Fehler beim Laden von wallet.dat: Brieftasche beschädigt</translation>
+        <translation>Fehler beim Laden von wallet.dat: Brieftasche beschädigt</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error loading wallet.dat: Wallet requires newer version of Freicoin</source>
-        <translation type="unfinished"></translation>
+        <translation>Fehler beim Laden von wallet.dat: Brieftasche benötigt neuere Version von Freicoin</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error</source>
-        <translation type="unfinished">Fehler</translation>
+        <translation>Fehler</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: Transaction creation failed  </source>
-        <translation type="unfinished">Fehler: Transaktionserstellung fehlgeschlagen</translation>
+        <translation>Fehler: Transaktionserstellung fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: Wallet locked, unable to create transaction  </source>
-        <translation type="unfinished">Fehler: Brieftasche gesperrt, Transaktion kann nicht erstellt werden</translation>
+        <translation>Fehler: Brieftasche gesperrt, Transaktion kann nicht erstellt werden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Error: could not start node</source>
-        <translation type="unfinished">Fehler: Knoten konnte nicht gestartet weden</translation>
+        <translation>Fehler: Knoten konnte nicht gestartet weden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation type="unfinished">Fehler, es konnte kein Port abgehört werden. Wenn dies so gewünscht wird -listen=0 verwenden.</translation>
+        <translation>Fehler, es konnte kein Port abgehört werden. Wenn dies so gewünscht wird -listen=0 verwenden.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Fee per KB to add to transactions you send</source>
-        <translation type="unfinished">Gebühr pro KB, die gesendeten Transaktionen hinzugefügt wird</translation>
+        <translation>Gebühr pro KB, die gesendeten Transaktionen hinzugefügt wird</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Find peers using DNS lookup (default: 1 unless -connect)</source>
-        <translation type="unfinished">Gegenstellen via DNS-Namensauflösung finden (Standard: 1, außer bei -connect)</translation>
+        <translation>Gegenstellen via DNS-Namensauflösung finden (Standard: 1, ausser bei -connect)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Find peers using internet relay chat (default: 0)</source>
-        <translation type="unfinished">Gegenstellen via Internet Relay Chat finden (Standard: 0)</translation>
+        <translation>Gegenstellen via Internet Relay Chat finden (Standard: 0)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Freicoin version</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin Version</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Freicoin</source>
-        <translation type="unfinished"></translation>
+        <translation>Freicoin</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Generate coins</source>
-        <translation type="unfinished">Bitcoins generieren</translation>
+        <translation>Freicoins generieren</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Get help for a command</source>
-        <translation type="unfinished">Hilfe zu einem Befehl erhalten</translation>
+        <translation>Hilfe zu einem Befehl erhalten</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>How many blocks to check at startup (default: 2500, 0 = all)</source>
-        <translation type="unfinished">Wieviele Blöcke sollen beim Starten geprüft werden (Standard: 2500, 0 = alle)</translation>
+        <translation>Wieviele Blöcke sollen beim Starten geprüft werden (Standard: 2500, 0 = alle)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>How thorough the block verification is (0-6, default: 1)</source>
-        <translation type="unfinished">Wie gründlich soll die Blockprüfung sein (0-6, Standard: 1)</translation>
+        <translation>Wie gründlich soll die Blockprüfung sein (0-6, Standard: 1)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Importing blockchain data file.</source>
-        <translation type="unfinished">Importiere Datendatei der Blockkette...</translation>
+        <translation>Importiere Datendatei der Blockkette...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Importing bootstrap blockchain data file.</source>
-        <translation type="unfinished">Importiere Bootstrap-Datendatei der Blockkette...</translation>
+        <translation>Importiere Bootstrap-Datendatei der Blockkette...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Imports blocks from external blk000?.dat file</source>
-        <translation type="unfinished">Blöcke aus einer externen blk000?.dat Datei importieren</translation>
+        <translation>Blöcke aus einer externen blk000?.dat Datei importieren</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Insufficient funds</source>
-        <translation type="unfinished">Unzureichender Kontostand</translation>
+        <translation>Unzureichender Kontostand</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid -proxy address: &apos;%s&apos;</source>
-        <translation type="unfinished">Ungültige Adresse in -proxy: &apos;%s&apos;</translation>
+        <translation>Ungültige Adresse in -proxy: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
-        <translation type="unfinished">Ungültige Adresse in -tor: &apos;%s&apos;</translation>
+        <translation>Ungültige Adresse in -tor: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished">Falscher Betrag für -paytxfee=&lt;Betrag&gt;: &apos;%s&apos;</translation>
+        <translation>Falscher Betrag für -paytxfee=&lt;Betrag&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Invalid amount</source>
-        <translation type="unfinished">Ungültige Angabe</translation>
+        <translation>Falscher Betrag</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>List commands</source>
-        <translation type="unfinished">Befehle auflisten</translation>
+        <translation>Befehle auflisten</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Listen for connections on &lt;port&gt; (default: 8639 or testnet: 18639)</source>
-        <translation type="unfinished">&lt;port&gt; nach Verbindungen abhören (Standard: 8639 oder Testnetz: 18639)</translation>
+        <translation>&lt;port&gt; nach Verbindungen abhören (Standard: 8639 oder Testnetz: 18639)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Loading addresses...</source>
-        <translation type="unfinished">Lade Adressen...</translation>
+        <translation>Lade Adressen...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Loading block index...</source>
-        <translation type="unfinished">Lade Blockindex...</translation>
+        <translation>Lade Blockindex...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Loading wallet...</source>
-        <translation type="unfinished">Lade Brieftasche...</translation>
+        <translation>Lade Brieftasche...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Maintain at most &lt;n&gt; connections to peers (default: 125)</source>
-        <translation type="unfinished">Maximal &lt;n&gt; Verbindungen zu Gegenstellen aufrechterhalten (Standard: 125)</translation>
+        <translation>Maximal &lt;n&gt; Verbindungen zu Gegenstellen aufrechterhalten (Standard: 125)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
-        <translation type="unfinished">Maximale Größe, &lt;n&gt; * 1000 Byte, des Empfangspuffers pro Verbindung (Standard: 5000)</translation>
+        <translation>Maximale Größe, &lt;n&gt;* 1000 Byte, des Empfangspuffers pro Verbindung (Standard: 5000)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: 1000)</source>
-        <translation type="unfinished">Maximale Größe, &lt;n&gt; * 1000 Byte, des Sendepuffers pro Verbindung (Standard: 1000)</translation>
+        <translation>Maximale Größe, &lt;n&gt; * 1000 Byte, des Sendepuffers pro Verbindung (Standard: 1000)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
-        <translation type="unfinished">Verbinde nur zu Knoten des Netztyps &lt;net&gt; (IPv4, IPv6 oder Tor)</translation>
+        <translation>Verbinde nur zu Knoten des Netztyps &lt;net&gt; (IPv4, IPv6 oder Tor)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Options:</source>
-        <translation type="unfinished">Optionen:</translation>
+        <translation>Optionen:</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
-        <translation type="unfinished">Ausgabe zusätzlicher Debugginginformationen. Beinhaltet alle anderen -debug* Parameter</translation>
+        <translation>Ausgabe zusätzlicher Debugginginformationen. Beinhaltet alle anderen -debug* Parameter</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Output extra network debugging information</source>
-        <translation type="unfinished">Ausgabe zusätzlicher Netzwerk-Debugginginformationen</translation>
+        <translation>Ausgabe zusätzlicher Netzwerk-Debugginginformationen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Password for JSON-RPC connections</source>
-        <translation type="unfinished">Passwort für JSON-RPC-Verbindungen</translation>
+        <translation>Passwort für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Prepend debug output with timestamp</source>
-        <translation type="unfinished">Der Debugausgabe einen Zeitstempel voranstellen</translation>
+        <translation>Der Debugausgabe einen Zeitstempel voranstellen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation type="unfinished">Blockkette erneut nach fehlenden Transaktionen der Brieftasche durchsuchen</translation>
+        <translation>Blockkette erneut nach fehlenden Transaktionen der Brieftasche durchsuchen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Rescanning...</source>
-        <translation type="unfinished">Durchsuche erneut...</translation>
+        <translation>Durchsuche erneut...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Run in the background as a daemon and accept commands</source>
-        <translation type="unfinished">Als Hintergrunddienst starten und Befehle annehmen</translation>
+        <translation>Als Hintergrunddienst starten und Befehle annehmen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation type="unfinished">SSL-Optionen: (siehe Bitcoin-Wiki für SSL-Installationsanweisungen)</translation>
+        <translation>SSL-Optionen: (siehe Bitcoin-Wiki für SSL-Installationsanweisungen)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
-        <translation type="unfinished">SOCKS-Version des Proxies festlegen (4-5, Standard: 5)</translation>
+        <translation>SOCKS-Version des Proxies festlegen (4-5, Standard: 5)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Send command to -server or freicoind</source>
-        <translation type="unfinished"></translation>
+        <translation>Befehl an -server oder freicoind senden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
-        <translation type="unfinished">Sende Befehle an Knoten &lt;ip&gt; (Standard: 127.0.0.1)</translation>
+        <translation>Sende Befehle an Knoten &lt;ip&gt; (Standard: 127.0.0.1)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation type="unfinished">Rückverfolgungs- und Debuginformationen an die Konsole senden anstatt sie in die debug.log Datei zu schreiben</translation>
+        <translation>Rückverfolgungs- und Debuginformationen an die Konsole senden anstatt sie in die debug.log Datei zu schreiben</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Send trace/debug info to debugger</source>
-        <translation type="unfinished">Rückverfolgungs- und Debuginformationen an den Debugger senden</translation>
+        <translation>Rückverfolgungs- und Debuginformationen an den Debugger senden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Sending...</source>
-        <translation type="unfinished"></translation>
+        <translation>Senden...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Server certificate file (default: server.cert)</source>
-        <translation type="unfinished">Serverzertifikat (Standard: server.cert)</translation>
+        <translation>Serverzertifikat (Standard: server.cert)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Server private key (default: server.pem)</source>
-        <translation type="unfinished">Privater Serverschlüssel (Standard: server.pem)</translation>
+        <translation>Privater Serverschlüssel (Standard: server.pem)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set database cache size in megabytes (default: 25)</source>
-        <translation type="unfinished">Größe des Datenbankcaches in MB festlegen (Standard: 25)</translation>
+        <translation>Grösse des Datenbankcaches in MB festlegen (Standard: 25)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set database disk log size in megabytes (default: 100)</source>
-        <translation type="unfinished">Größe des Datenbankprotokolls auf der Festplatte in MB festlegen (Standard: 100)</translation>
+        <translation>Grösse des Datenbankprotokolls auf der Festplatte in MB festlegen (Standard: 100)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
-        <translation type="unfinished">Größe des Schlüsselpools festlegen auf &lt;n&gt; (Standard: 100)</translation>
+        <translation>Grösse des Schlüsselpools festlegen auf &lt;n&gt; (Standard: 100)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set maximum block size in bytes (default: 250000)</source>
-        <translation type="unfinished">Maximale Blockgröße in Byte festlegen (Standard: 250000)</translation>
+        <translation>Maximale Blockgrösse in Byte festlegen (Standard: 250000)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Set minimum block size in bytes (default: 0)</source>
-        <translation type="unfinished">Minimale Blockgröße in Byte festlegen (Standard: 0)</translation>
+        <translation>Minimale Blockgrösse in Byte festlegen (Standard: 0)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation type="unfinished">Verkleinere debug.log Datei beim Start des Clients (Standard: 1, wenn kein -debug)</translation>
+        <translation>Verkleinere debug.log Datei beim Start des Clients (Standard: 1, wenn kein -debug)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Specify configuration file (default: freicoin.conf)</source>
-        <translation type="unfinished"></translation>
+        <translation>Konfigurationsdatei angeben (Standard: freicoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
-        <translation type="unfinished">Verbindungstimeout in Millisekunden angeben (Standard: 5000)</translation>
+        <translation>Verbindungstimeout in Millisekunden angeben (Standard: 5000)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Specify data directory</source>
-        <translation type="unfinished">Datenverzeichnis angeben</translation>
+        <translation>Datenverzeichnis angeben</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Specify pid file (default: freicoind.pid)</source>
-        <translation type="unfinished"></translation>
+        <translation>PID-Datei angeben (Standard: freicoind.pid)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Specify your own public address</source>
-        <translation type="unfinished">Die eigene öffentliche Adresse angeben</translation>
+        <translation>Die eigene öffentliche Adresse angeben</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>This help message</source>
-        <translation type="unfinished">Dieser Hilfetext</translation>
+        <translation>Dieser Hilfetext</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
-        <translation type="unfinished">Schwellenwert, um Verbindungen zu sich nicht konform verhaltenden Gegenstellen zu beenden (Standard: 100)</translation>
+        <translation>Schwellenwert, um Verbindungen zu sich nicht konform verhaltenden Gegenstellen zu beenden (Standard: 100)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>To use the %s option</source>
-        <translation type="unfinished">Zur Nutzung der %s Option</translation>
+        <translation>Zur Nutzung der %s Option</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
-        <translation type="unfinished">Kann auf diesem Computer nicht an %s binden (von bind zurückgegebener Fehler %d, %s)</translation>
+        <translation>Kann auf diesem Computer nicht an %s binden (von bind zurückgegebener Fehler %d, %s)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Unknown -socks proxy version requested: %i</source>
-        <translation type="unfinished">Unbekannte Proxyversion in -socks angefordert: %i</translation>
+        <translation>Unbekannte Proxyversion in -socks angefordert: %i</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
-        <translation type="unfinished">Unbekannter Netztyp in -onlynet angegeben: &apos;%s&apos;</translation>
+        <translation>Unbekannter Netztyp in -onlynet angegeben: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Upgrade wallet to latest format</source>
-        <translation type="unfinished">Brieftasche auf das neueste Format aktualisieren</translation>
+        <translation>Brieftasche auf das neueste Format aktualisieren</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Usage:</source>
-        <translation type="unfinished">Benutzung:</translation>
+        <translation>Benutzung:</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation type="unfinished">OpenSSL (https) für JSON-RPC-Verbindungen verwenden</translation>
+        <translation>OpenSSL (https) für JSON-RPC-Verbindungen verwenden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
-        <translation type="unfinished">UPnP verwenden, um die Portweiterleitung einzurichten (Standard: 0)</translation>
+        <translation>UPnP verwenden, um die Portweiterleitung einzurichten (Standard: 0)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation type="unfinished">UPnP verwenden, um die Portweiterleitung einzurichten (Standard: 1, wenn abgehört wird)</translation>
+        <translation>UPnP verwenden, um die Portweiterleitung einzurichten (Standard: 1, wenn abgehört wird)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
-        <translation type="unfinished">Proxy verwenden, um versteckte Tor-Dienste zu erreichen (Standard: identisch mit -proxy)</translation>
+        <translation>Proxy verwenden, um versteckte Tor-Dienste zu erreichen (Standard: identisch mit -proxy)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Use the test network</source>
-        <translation type="unfinished">Das Testnetz verwenden</translation>
+        <translation>Das Testnetz verwenden</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Username for JSON-RPC connections</source>
-        <translation type="unfinished">Benutzername für JSON-RPC-Verbindungen</translation>
+        <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Verifying database integrity...</source>
-        <translation type="unfinished"></translation>
+        <translation>Prüfe Integrität der Datenbank...</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Wallet needed to be rewritten: restart Freicoin to complete</source>
-        <translation type="unfinished"></translation>
+        <translation>Brieftasche muss neu geschrieben werden: Starten Sie Freicoin zur Fertigstellung neu</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Warning: Disk space is low!</source>
-        <translation type="unfinished">Warnung: Nicht mehr genügend Festplattenplatz verfügbar!</translation>
+        <translation>Warnung: Nicht mehr genügend Festplattenplatz verfügbar!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation type="unfinished">Warnung: Diese Version is veraltet, Aktualisierung erforderlich!</translation>
+        <translation>Warnung: Diese Version is veraltet, Aktualisierung erforderlich!</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>wallet.dat corrupt, salvage failed</source>
-        <translation type="unfinished"></translation>
+        <translation>wallet.dat beschädigt, Rettung gescheitert</translation>
     </message>
 </context>
 </TS>

@@ -388,7 +388,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+72"/>
+        <location filename="../freicoingui.cpp" line="+74"/>
         <source>Freicoin</source>
         <translation type="unfinished"></translation>
     </message>
@@ -398,7 +398,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">钱包</translation>
     </message>
     <message>
-        <location line="+123"/>
+        <location line="+124"/>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;概况</translation>
     </message>
@@ -408,22 +408,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">显示钱包概况</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Send coins</source>
-        <translation type="unfinished">&amp;发送货币</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Send coins to a Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Receive coins</source>
-        <translation type="unfinished">&amp;收款地址</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Show the list of addresses for receiving payments</source>
         <translation type="unfinished">显示接收支付的地址列表</translation>
     </message>
@@ -438,9 +428,19 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">查看交易历史</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Address Book</source>
-        <translation type="unfinished">&amp;地址簿</translation>
+        <location line="-13"/>
+        <source>&amp;Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&amp;Receive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&amp;Contacts</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -489,8 +489,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Show / Hide</source>
-        <translation type="unfinished">&amp;显示 / 隐藏</translation>
+        <source>Show / &amp;Hide</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -662,7 +662,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">最新收到的数据块产生于 %1。</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+81"/>
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
         <translation type="unfinished">该笔交易的数据量超限.您可以选择支付 %1 交易费， 交易费将支付给处理该笔交易的网络节点，有助于维持比特币网络的运行.  您愿意支付交易费用吗？</translation>
     </message>
@@ -810,12 +810,7 @@ Address: %4
         <translation>关闭时分开数据块数据库和地址数据库. 这意味着您可以将数据库文件移动至其他文件夹. 钱包文件始终是分开的.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Detach databases at shutdown</source>
-        <translation>&amp;关闭客户端时分离数据库</translation>
-    </message>
-    <message>
-        <location line="+21"/>
+        <location line="+24"/>
         <source>&amp;Network</source>
         <translation>&amp;网络</translation>
     </message>
@@ -835,7 +830,12 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+10"/>
+        <source>D&amp;etach databases at shutdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
         <source>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -845,12 +845,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Connect through SOCKS proxy:</source>
-        <translation>&amp;通过Socks代理连接:</translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <source>Proxy &amp;IP:</source>
         <translation>代理服务器&amp;IP:</translation>
     </message>
@@ -890,12 +885,12 @@ Address: %4
         <translation>最小化窗口后仅显示托盘图标</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;最小化到托盘</translation>
+        <location line="+91"/>
+        <source>Display addresses in &amp;transaction list</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-81"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
         <translation>当窗口关闭时程序最小化而不是退出。当使用该选项时，程序只能通过在菜单中选择退出来关闭</translation>
     </message>
@@ -930,17 +925,22 @@ Address: %4
         <translation>&amp;比特币金额单位:</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-182"/>
+        <source>Connect through &amp;SOCKS proxy:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+119"/>
+        <source>Minimize to the &amp;tray instead of the taskbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+76"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>选择比特币单位。</translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>在交易清单中&amp;显示比特币地址</translation>
-    </message>
-    <message>
-        <location line="+71"/>
+        <location line="+83"/>
         <source>&amp;OK</source>
         <translation>&amp;确定</translation>
     </message>
@@ -1283,8 +1283,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Clear &amp;All</source>
-        <translation>清除 &amp;所有</translation>
+        <source>&amp;Clear All</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -1421,6 +1421,11 @@ Address: %4
         <translation>移除此接收者</translation>
     </message>
     <message>
+        <location line="+10"/>
+        <source>Alt+D</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation type="unfinished"></translation>
@@ -1435,12 +1440,12 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <location line="+124"/>
+        <location line="+127"/>
         <source>&amp;Sign Message</source>
         <translation>&amp;签名消息</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="-121"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>您可以用你的地址对消息进行签名，以证明您是该地址的所有人。注意不要对模棱两可的消息签名，以免遭受钓鱼式攻击。请确保消息内容准确的表达了您的真实意愿。</translation>
     </message>
@@ -1451,18 +1456,18 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <location line="+203"/>
+        <location line="+206"/>
         <source>Choose an address from the address book</source>
         <translation>从地址簿选择地址</translation>
     </message>
     <message>
-        <location line="-193"/>
-        <location line="+203"/>
+        <location line="-196"/>
+        <location line="+206"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="-193"/>
+        <location line="-196"/>
         <source>Paste address from clipboard</source>
         <translation>从剪贴板粘贴地址</translation>
     </message>
@@ -1482,12 +1487,23 @@ Address: %4
         <translation>复制当前签名至剪切板</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+10"/>
+        <source>Alt+Y</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Sign the message to prove you own this Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+20"/>
         <location line="+146"/>
+        <source>&amp;Clear All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-20"/>
         <source>Verify the message to ensure it was signed with the specified Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1497,13 +1513,7 @@ Address: %4
         <translation>清空所有签名消息栏</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+146"/>
-        <source>Clear &amp;All</source>
-        <translation>清除 &amp;所有</translation>
-    </message>
-    <message>
-        <location line="-87"/>
+        <location line="+62"/>
         <location line="+70"/>
         <source>&amp;Verify Message</source>
         <translation>&amp;验证消息</translation>
@@ -2582,7 +2592,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     <message>
         <location line="+1"/>
         <source>Sending...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">发送中...</translation>
     </message>
     <message>
         <location line="+1"/>

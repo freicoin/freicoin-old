@@ -388,7 +388,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+72"/>
+        <location filename="../freicoingui.cpp" line="+74"/>
         <source>Freicoin</source>
         <translation type="unfinished"></translation>
     </message>
@@ -398,7 +398,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">Portfel</translation>
     </message>
     <message>
-        <location line="+123"/>
+        <location line="+124"/>
         <source>&amp;Overview</source>
         <translation type="unfinished">P&amp;odsumowanie</translation>
     </message>
@@ -408,22 +408,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">Pokazuje ogólny zarys portfela</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Send coins</source>
-        <translation type="unfinished">Wy&amp;syłka monet</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Send coins to a Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Receive coins</source>
-        <translation type="unfinished">Odbie&amp;rz monety</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Show the list of addresses for receiving payments</source>
         <translation type="unfinished">Pokaż listę adresów do otrzymywania płatności</translation>
     </message>
@@ -438,9 +428,19 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">Przeglądaj historię transakcji</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Address Book</source>
-        <translation type="unfinished">Książka &amp;adresowa</translation>
+        <location line="-13"/>
+        <source>&amp;Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&amp;Receive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&amp;Contacts</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -489,8 +489,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Show / Hide</source>
-        <translation type="unfinished">&amp;Pokaż / Ukryj</translation>
+        <source>Show / &amp;Hide</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -674,7 +674,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation type="unfinished">Ostatnio otrzymany blok został wygenerowany %1.</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+81"/>
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
         <translation type="unfinished">Transakcja przekracza limit. Możesz wysłać ją płacąc prowizję %1, która zostaje przekazana do węzłów, które ją prześlą i pomoże wspierać sieć Bitcoin. Czy chcesz zapłacić prowizję?</translation>
     </message>
@@ -821,12 +821,7 @@ Adres: %4
         <translation>Odłącz bazę bloków i adresów podczas zamknięcia aplikcji. Oznacza to, że baza może zostać przeniesiona do innego folderu, ale jednocześnie zwiększa czas potrzebny na zamknięcie programu. Portfel jest zawsze odłączany.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Detach databases at shutdown</source>
-        <translation>&amp;Odłącz bazy danych przy zamknięciu</translation>
-    </message>
-    <message>
-        <location line="+21"/>
+        <location line="+24"/>
         <source>&amp;Network</source>
         <translation>&amp;Sieć</translation>
     </message>
@@ -846,7 +841,12 @@ Adres: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+10"/>
+        <source>D&amp;etach databases at shutdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
         <source>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -856,12 +856,7 @@ Adres: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Connect through SOCKS proxy:</source>
-        <translation>&amp;Połącz się przez proxy SOCKS</translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <source>Proxy &amp;IP:</source>
         <translation>Proxy &amp;IP: </translation>
     </message>
@@ -901,12 +896,12 @@ Adres: %4
         <translation>Pokazuj tylko ikonę przy zegarku po zminimalizowaniu okna.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimalizuj do paska przy zegarku zamiast do paska zadań</translation>
+        <location line="+91"/>
+        <source>Display addresses in &amp;transaction list</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-81"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
         <translation>Minimalizuje zamiast zakończyć działanie programu przy zamykaniu okna. Kiedy ta opcja jest włączona, program zakończy działanie po wybieraniu Zamknij w menu.</translation>
     </message>
@@ -941,17 +936,22 @@ Adres: %4
         <translation>&amp;Jednostka pokazywana przy kwocie:</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-182"/>
+        <source>Connect through &amp;SOCKS proxy:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+119"/>
+        <source>Minimize to the &amp;tray instead of the taskbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+76"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Wybierz podział jednostki pokazywany w interfejsie  oraz podczas wysyłania monet</translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Wyświetlaj adresy w liście transakcji</translation>
-    </message>
-    <message>
-        <location line="+71"/>
+        <location line="+83"/>
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
@@ -1294,8 +1294,8 @@ Adres: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Clear &amp;All</source>
-        <translation>Wyczyść &amp;wszystko</translation>
+        <source>&amp;Clear All</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -1432,6 +1432,11 @@ Adres: %4
         <translation>Usuń tego odbiorce</translation>
     </message>
     <message>
+        <location line="+10"/>
+        <source>Alt+D</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation type="unfinished"></translation>
@@ -1446,12 +1451,12 @@ Adres: %4
     </message>
     <message>
         <location line="+13"/>
-        <location line="+124"/>
+        <location line="+127"/>
         <source>&amp;Sign Message</source>
         <translation>Podpi&amp;sz Wiadomość</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="-121"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Możesz podpisywać wiadomości swoimi adresami aby udowodnić, że jesteś ich właścicielem. Uważaj, aby nie podpisywać niczego co wzbudza Twoje podejrzenia, ponieważ ktoś może stosować phishing próbując nakłonić Cię do ich podpisania. Akceptuj i podpisuj tylko w pełni zrozumiałe komunikaty i wiadomości.</translation>
     </message>
@@ -1462,18 +1467,18 @@ Adres: %4
     </message>
     <message>
         <location line="+10"/>
-        <location line="+203"/>
+        <location line="+206"/>
         <source>Choose an address from the address book</source>
         <translation>Wybierz adres z książki kontaktowej</translation>
     </message>
     <message>
-        <location line="-193"/>
-        <location line="+203"/>
+        <location line="-196"/>
+        <location line="+206"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="-193"/>
+        <location line="-196"/>
         <source>Paste address from clipboard</source>
         <translation>Wklej adres ze schowka</translation>
     </message>
@@ -1493,12 +1498,23 @@ Adres: %4
         <translation>Kopiuje aktualny podpis do schowka systemowego</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+10"/>
+        <source>Alt+Y</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Sign the message to prove you own this Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+20"/>
         <location line="+146"/>
+        <source>&amp;Clear All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-20"/>
         <source>Verify the message to ensure it was signed with the specified Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1508,13 +1524,7 @@ Adres: %4
         <translation>Zresetuj wszystkie pola podpisanej wiadomości</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+146"/>
-        <source>Clear &amp;All</source>
-        <translation>Wyczyść &amp;wszystko</translation>
-    </message>
-    <message>
-        <location line="-87"/>
+        <location line="+62"/>
         <location line="+70"/>
         <source>&amp;Verify Message</source>
         <translation>&amp;Zweryfikuj wiadomość</translation>

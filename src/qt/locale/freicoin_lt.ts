@@ -387,7 +387,7 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+72"/>
+        <location filename="../freicoingui.cpp" line="+74"/>
         <source>Freicoin</source>
         <translation type="unfinished"></translation>
     </message>
@@ -397,7 +397,7 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation type="unfinished">Piniginė</translation>
     </message>
     <message>
-        <location line="+123"/>
+        <location line="+124"/>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Apžvalga</translation>
     </message>
@@ -407,22 +407,12 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation type="unfinished">Rodyti piniginės bendrą apžvalgą</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Send coins</source>
-        <translation type="unfinished">&amp;Siųsti monetas</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Send coins to a Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Receive coins</source>
-        <translation type="unfinished">&amp;Gauti monetas</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Show the list of addresses for receiving payments</source>
         <translation type="unfinished">Parodyti adresų sąraša mokėjimams gauti</translation>
     </message>
@@ -437,9 +427,19 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation type="unfinished">Apžvelgti sandorių istoriją</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Address Book</source>
-        <translation type="unfinished">&amp;Adresų knygelė</translation>
+        <location line="-13"/>
+        <source>&amp;Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&amp;Receive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&amp;Contacts</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -488,8 +488,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Show / Hide</source>
-        <translation type="unfinished">&amp;Rodyti / Slėpti</translation>
+        <source>Show / &amp;Hide</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -673,7 +673,7 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
         <translation type="unfinished">Paskutinis gautas blokas buvo sukurtas %1.</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+81"/>
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
         <translation type="unfinished">Šis sandoris viršija leistiną dydį.  Jūs galite įvykdyti jį papildomai sumokėję %1 mokesčių, kurie bus išsiųsti tais pačiais mazgais kuriais vyko sandoris ir padės palaikyti tinklą. Ar jūs norite apmokėti papildomą mokestį?</translation>
     </message>
@@ -819,12 +819,7 @@ Adresas: %4</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Detach databases at shutdown</source>
-        <translation>&amp;Atjungti duombazes išsijungiant</translation>
-    </message>
-    <message>
-        <location line="+21"/>
+        <location line="+24"/>
         <source>&amp;Network</source>
         <translation>&amp;Tinklas</translation>
     </message>
@@ -844,7 +839,12 @@ Adresas: %4</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+10"/>
+        <source>D&amp;etach databases at shutdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
         <source>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -854,12 +854,7 @@ Adresas: %4</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Connect through SOCKS proxy:</source>
-        <translation>&amp;Jungtis per SOCKS tarpinį serverį:</translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <source>Proxy &amp;IP:</source>
         <translation>Tarpinio serverio &amp;IP:</translation>
     </message>
@@ -899,12 +894,12 @@ Adresas: %4</translation>
         <translation>Po programos lango sumažinimo rodyti tik programos ikoną.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;M sumažinti langą bet ne užduočių juostą</translation>
+        <location line="+91"/>
+        <source>Display addresses in &amp;transaction list</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-81"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
         <translation>Uždarant langą neuždaryti programos. Kai ši parinktis įjungta, programa bus uždaryta tik pasirinkus  meniu komandą Baigti.</translation>
     </message>
@@ -939,17 +934,22 @@ Adresas: %4</translation>
         <translation>&amp;Vienetai, kuriais rodyti sumas:</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-182"/>
+        <source>Connect through &amp;SOCKS proxy:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+119"/>
+        <source>Minimize to the &amp;tray instead of the taskbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+76"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Rodomų ir siunčiamų monetų kiekio matavimo vienetai</translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Rodyti adresus sandorių sąraše</translation>
-    </message>
-    <message>
-        <location line="+71"/>
+        <location line="+83"/>
         <source>&amp;OK</source>
         <translation>&amp;Gerai</translation>
     </message>
@@ -1292,8 +1292,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Clear &amp;All</source>
-        <translation>Išvalyti &amp;viską</translation>
+        <source>&amp;Clear All</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -1430,6 +1430,11 @@ Adresas: %4</translation>
         <translation>Pašalinti šį gavėją</translation>
     </message>
     <message>
+        <location line="+10"/>
+        <source>Alt+D</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation type="unfinished"></translation>
@@ -1444,12 +1449,12 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location line="+124"/>
+        <location line="+127"/>
         <source>&amp;Sign Message</source>
         <translation>&amp;Pasirašyti žinutę</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="-121"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1460,18 +1465,18 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+10"/>
-        <location line="+203"/>
+        <location line="+206"/>
         <source>Choose an address from the address book</source>
         <translation>Pasirinkite adresą iš adresų knygelės</translation>
     </message>
     <message>
-        <location line="-193"/>
-        <location line="+203"/>
+        <location line="-196"/>
+        <location line="+206"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="-193"/>
+        <location line="-196"/>
         <source>Paste address from clipboard</source>
         <translation>Įvesti adresą iš mainų atminties</translation>
     </message>
@@ -1491,12 +1496,23 @@ Adresas: %4</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+10"/>
+        <source>Alt+Y</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Sign the message to prove you own this Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+20"/>
         <location line="+146"/>
+        <source>&amp;Clear All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-20"/>
         <source>Verify the message to ensure it was signed with the specified Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1506,13 +1522,7 @@ Adresas: %4</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+146"/>
-        <source>Clear &amp;All</source>
-        <translation>Išvalyti &amp;viską</translation>
-    </message>
-    <message>
-        <location line="-87"/>
+        <location line="+62"/>
         <location line="+70"/>
         <source>&amp;Verify Message</source>
         <translation>&amp;Patikrinti žinutę</translation>

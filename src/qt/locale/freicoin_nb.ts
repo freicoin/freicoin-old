@@ -388,7 +388,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+72"/>
+        <location filename="../freicoingui.cpp" line="+74"/>
         <source>Freicoin</source>
         <translation type="unfinished"></translation>
     </message>
@@ -398,7 +398,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation type="unfinished">Lommebok</translation>
     </message>
     <message>
-        <location line="+123"/>
+        <location line="+124"/>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Oversikt</translation>
     </message>
@@ -408,22 +408,12 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation type="unfinished">Vis generell oversikt over lommeboken</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Send coins</source>
-        <translation type="unfinished">&amp;Send bitcoins</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Send coins to a Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Receive coins</source>
-        <translation type="unfinished">&amp;Motta bitcoins</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Show the list of addresses for receiving payments</source>
         <translation type="unfinished">Vis listen over adresser for mottak av betalinger</translation>
     </message>
@@ -438,9 +428,19 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation type="unfinished">Vis transaksjonshistorikk</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Address Book</source>
-        <translation type="unfinished">&amp;Adressebok</translation>
+        <location line="-13"/>
+        <source>&amp;Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&amp;Receive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&amp;Contacts</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -489,8 +489,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Show / Hide</source>
-        <translation type="unfinished">&amp;Gjem / vis</translation>
+        <source>Show / &amp;Hide</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -668,7 +668,7 @@ Dette produktet inneholder programvare utviklet av OpenSSL prosjektet for bruk i
         <translation type="unfinished">Siste mottatte blokk ble generert %1.</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+81"/>
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
         <translation type="unfinished">Denne transaksjonen overstiger størrelsesbegrensningen.  Du kan likevel sende den med et gebyr på %1, som går til nodene som prosesserer transaksjonen din og støtter nettverket.  Vil du betale gebyret?</translation>
     </message>
@@ -816,12 +816,7 @@ Adresse: %4
         <translation>Koble fra blokk og adresse databaser ved avslutning. Dette betyr at de kan flyttes til en annen mappe, men det gir en tregere avslutning. Lommeboken blir alltid koblet fra.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Detach databases at shutdown</source>
-        <translation>&amp;Koble fra databaser ved avslutning</translation>
-    </message>
-    <message>
-        <location line="+21"/>
+        <location line="+24"/>
         <source>&amp;Network</source>
         <translation>&amp;Nettverk</translation>
     </message>
@@ -841,7 +836,12 @@ Adresse: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+10"/>
+        <source>D&amp;etach databases at shutdown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
         <source>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -851,12 +851,7 @@ Adresse: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Connect through SOCKS proxy:</source>
-        <translation>&amp;Koble til gjenom SOCKS proxy:</translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <source>Proxy &amp;IP:</source>
         <translation>Proxy &amp;IP:</translation>
     </message>
@@ -896,12 +891,12 @@ Adresse: %4
         <translation>Vis kun ikon i systemkurv etter minimering av vinduet.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimer til systemkurv istedenfor oppgavelinjen</translation>
+        <location line="+91"/>
+        <source>Display addresses in &amp;transaction list</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-81"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
         <translation>Minimerer vinduet istedenfor å avslutte applikasjonen når vinduet lukkes. Når dette er slått på avsluttes applikasjonen kun ved å velge avslutt i menyen.</translation>
     </message>
@@ -936,17 +931,22 @@ Adresse: %4
         <translation>&amp;Enhet for visning av beløper:</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-182"/>
+        <source>Connect through &amp;SOCKS proxy:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+119"/>
+        <source>Minimize to the &amp;tray instead of the taskbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+76"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Velg standard delt enhet for visning i grensesnittet og for sending av bitcoins.</translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Vis adresser i transaksjonslisten</translation>
-    </message>
-    <message>
-        <location line="+71"/>
+        <location line="+83"/>
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
@@ -1289,8 +1289,8 @@ Adresse: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Clear &amp;All</source>
-        <translation>Fjern &amp;Alt</translation>
+        <source>&amp;Clear All</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -1427,6 +1427,11 @@ Adresse: %4
         <translation>Fjern denne mottakeren</translation>
     </message>
     <message>
+        <location line="+10"/>
+        <source>Alt+D</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation type="unfinished"></translation>
@@ -1441,12 +1446,12 @@ Adresse: %4
     </message>
     <message>
         <location line="+13"/>
-        <location line="+124"/>
+        <location line="+127"/>
         <source>&amp;Sign Message</source>
         <translation>&amp;Signér Melding</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="-121"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Du kan signere meldinger med dine adresser for å bevise at du eier dem. Ikke signér vage meldinger da phishing-angrep kan prøve å lure deg til å signere din identitet over til andre. Signér kun fullt detaljerte utsagn som du er enig i.</translation>
     </message>
@@ -1457,18 +1462,18 @@ Adresse: %4
     </message>
     <message>
         <location line="+10"/>
-        <location line="+203"/>
+        <location line="+206"/>
         <source>Choose an address from the address book</source>
         <translation>Velg en adresse fra adresseboken</translation>
     </message>
     <message>
-        <location line="-193"/>
-        <location line="+203"/>
+        <location line="-196"/>
+        <location line="+206"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="-193"/>
+        <location line="-196"/>
         <source>Paste address from clipboard</source>
         <translation>Lim inn adresse fra utklippstavlen</translation>
     </message>
@@ -1488,12 +1493,23 @@ Adresse: %4
         <translation>Kopier valgt signatur til utklippstavle</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+10"/>
+        <source>Alt+Y</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Sign the message to prove you own this Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+20"/>
         <location line="+146"/>
+        <source>&amp;Clear All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-20"/>
         <source>Verify the message to ensure it was signed with the specified Freicoin address</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1503,13 +1519,7 @@ Adresse: %4
         <translation>Tilbakestill alle felter for meldingssignering</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+146"/>
-        <source>Clear &amp;All</source>
-        <translation>Fjern &amp;Alt</translation>
-    </message>
-    <message>
-        <location line="-87"/>
+        <location line="+62"/>
         <location line="+70"/>
         <source>&amp;Verify Message</source>
         <translation>&amp;Verifiser Melding</translation>

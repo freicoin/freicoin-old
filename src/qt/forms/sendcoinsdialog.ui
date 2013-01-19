@@ -87,7 +87,7 @@
         <string>Remove all transaction fields</string>
        </property>
        <property name="text">
-        <string>Clear &amp;All</string>
+        <string>&amp;Clear All</string>
        </property>
        <property name="icon">
         <iconset resource="../freicoin.qrc">

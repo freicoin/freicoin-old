@@ -84,7 +84,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-36"/>
         <source>&amp;New Address</source>
-        <translation>&amp;Новый адрес</translation>
+        <translation>Новый &amp;адрес</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -114,7 +114,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-11"/>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Проверить сообщение</translation>
+        <translation>Про&amp;верить сообщение</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -395,7 +395,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Случилась фатальная ошибка. Freicoin не может далее благополучно функционировать и будет закрыт.</translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+72"/>
+        <location filename="../freicoingui.cpp" line="+74"/>
         <source>Freicoin</source>
         <translation>Freicoin</translation>
     </message>
@@ -405,7 +405,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Кошелек</translation>
     </message>
     <message>
-        <location line="+123"/>
+        <location line="+124"/>
         <source>&amp;Overview</source>
         <translation>&amp;Обзор</translation>
     </message>
@@ -415,22 +415,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Показать общий обзор кошелька</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Send coins</source>
-        <translation>От&amp;править</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Send coins to a Freicoin address</source>
         <translation>Отправить монетки на адрес Freicoin</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Receive coins</source>
-        <translation>По&amp;лучить</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Show the list of addresses for receiving payments</source>
         <translation>Показать список адресов для получения платежей</translation>
     </message>
@@ -445,9 +435,19 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Просмотр истории операций</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>&amp;Address Book</source>
-        <translation>&amp;Адресная книга</translation>
+        <location line="-13"/>
+        <source>&amp;Send</source>
+        <translation>&amp;Отправить</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&amp;Receive</source>
+        <translation>&amp;Получить</translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&amp;Contacts</source>
+        <translation>&amp;Контакты</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -457,7 +457,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+16"/>
         <source>E&amp;xit</source>
-        <translation>&amp;Выход</translation>
+        <translation>Вы&amp;ход</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -496,8 +496,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+2"/>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Показать / Скрыть</translation>
+        <source>Show / &amp;Hide</source>
+        <translation>Показать / &amp;Скрыть</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -537,7 +537,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>&amp;Verify message...</source>
-        <translation>&amp;Проверить сообщение...</translation>
+        <translation>Про&amp;верить сообщение...</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -681,7 +681,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Последний полученный блок был сформирован %1.</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+81"/>
         <source>This transaction is over the size limit.  You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network.  Do you want to pay the fee?</source>
         <translation>Эта операция превышает предельный размер.  Вы можете еще отправить ее со взносом %1, который пойдет узлам, обрабатывающим вашу операцию и помогающим поддерживать сеть.  Хотите заплатить взнос?</translation>
     </message>
@@ -828,12 +828,7 @@ Address: %4
         <translation>Отвязать хранилища блока и адресов при выключении. Это означает, что они могут быть перемещены в другое место, но замедляет выключение. Кошелек всегда отвязывается.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Detach databases at shutdown</source>
-        <translation>Отвязать хранилища при &amp;выключении</translation>
-    </message>
-    <message>
-        <location line="+21"/>
+        <location line="+24"/>
         <source>&amp;Network</source>
         <translation>&amp;Сеть</translation>
     </message>
@@ -853,7 +848,12 @@ Address: %4
         <translation>&amp;Запускать Freicoin при входе в систему</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+10"/>
+        <source>D&amp;etach databases at shutdown</source>
+        <translation>Отвязать &amp;хранилища при выключении</translation>
+    </message>
+    <message>
+        <location line="+27"/>
         <source>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Автоматически открывать клиентский порт Freicoin на роутере. Это работает если ваш роутер поддерживает UPnP и его поддержка включена.</translation>
     </message>
@@ -863,12 +863,7 @@ Address: %4
         <translation>Соединяться с сетью Freicoin через SOCKS прокси (например при использовании Tor)</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Connect through SOCKS proxy:</source>
-        <translation>&amp;Соединяться через SOCKS прокси:</translation>
-    </message>
-    <message>
-        <location line="+9"/>
+        <location line="+12"/>
         <source>Proxy &amp;IP:</source>
         <translation>&amp;Адрес прокси:</translation>
     </message>
@@ -908,12 +903,12 @@ Address: %4
         <translation>Показывать только иконку в трее после минимизации окна.</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Минимизировать в трей а не на панель задач</translation>
+        <location line="+91"/>
+        <source>Display addresses in &amp;transaction list</source>
+        <translation>Отображать &amp;адрес в списке операций</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="-81"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
         <translation>Минимизировать вместо закрытия приложения когда окно закрывается. При включенной опции приложение закроется только после выбора пункта Выход в меню.</translation>
     </message>
@@ -948,17 +943,22 @@ Address: %4
         <translation>&amp;Единица для отображения количества:</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="-182"/>
+        <source>Connect through &amp;SOCKS proxy:</source>
+        <translation>Соединяться через &amp;SOCKS прокси:</translation>
+    </message>
+    <message>
+        <location line="+119"/>
+        <source>Minimize to the &amp;tray instead of the taskbar</source>
+        <translation>&amp;Минимизировать в трей а не на панель задач</translation>
+    </message>
+    <message>
+        <location line="+76"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Выберите разменную единицу для отображения в интерфейсе и при отправке монеток.</translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation>Отображать &amp;адрес в списке операций</translation>
-    </message>
-    <message>
-        <location line="+71"/>
+        <location line="+83"/>
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
@@ -1301,8 +1301,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Clear &amp;All</source>
-        <translation>Очистить &amp;все</translation>
+        <source>&amp;Clear All</source>
+        <translation>&amp;Очистить все</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -1322,7 +1322,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>S&amp;end</source>
-        <translation>&amp;Отправить</translation>
+        <translation>О&amp;тправить</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-59"/>
@@ -1395,7 +1395,7 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>Pay &amp;To:</source>
-        <translation>&amp;Платеж к:</translation>
+        <translation>П&amp;латеж к:</translation>
     </message>
     <message>
         <location line="+24"/>
@@ -1439,6 +1439,11 @@ Address: %4
         <translation>Удалить получателя</translation>
     </message>
     <message>
+        <location line="+10"/>
+        <source>Alt+D</source>
+        <translation>Alt+D</translation>
+    </message>
+    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Введите адрес Freicoin (например 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
@@ -1453,12 +1458,12 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <location line="+124"/>
+        <location line="+127"/>
         <source>&amp;Sign Message</source>
         <translation>Подписать &amp;сообщение</translation>
     </message>
     <message>
-        <location line="-118"/>
+        <location line="-121"/>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Вы можете подписать сообщение своим адресом для доказательства, что вы владеете им. Будьте внимательны и не подписывайте что-либо неясное, так как мошенники могут попытаться обманом выманить вашу подпись. Подписывайте только полностью определенные утверждения, с которыми согласны.</translation>
     </message>
@@ -1469,18 +1474,18 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <location line="+203"/>
+        <location line="+206"/>
         <source>Choose an address from the address book</source>
         <translation>Выбрать адрес из адресной книги</translation>
     </message>
     <message>
-        <location line="-193"/>
-        <location line="+203"/>
+        <location line="-196"/>
+        <location line="+206"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location line="-193"/>
+        <location line="-196"/>
         <source>Paste address from clipboard</source>
         <translation>Вставить адрес из буфера обмена</translation>
     </message>
@@ -1500,12 +1505,23 @@ Address: %4
         <translation>Скопировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+10"/>
+        <source>Alt+Y</source>
+        <translation>Alt+Y</translation>
+    </message>
+    <message>
+        <location line="+14"/>
         <source>Sign the message to prove you own this Freicoin address</source>
         <translation>Подписать сообщение для доказательства владения адресом Freicoin</translation>
     </message>
     <message>
+        <location line="+20"/>
         <location line="+146"/>
+        <source>&amp;Clear All</source>
+        <translation>&amp;Очистить все</translation>
+    </message>
+    <message>
+        <location line="-20"/>
         <source>Verify the message to ensure it was signed with the specified Freicoin address</source>
         <translation>Проверить сообщение для удостоверения, что оно было подписано указанным адресом Freicoin</translation>
     </message>
@@ -1515,16 +1531,10 @@ Address: %4
         <translation>Сбросить все поля подписания сообщения</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location line="+146"/>
-        <source>Clear &amp;All</source>
-        <translation>Очистить &amp;все</translation>
-    </message>
-    <message>
-        <location line="-87"/>
+        <location line="+62"/>
         <location line="+70"/>
         <source>&amp;Verify Message</source>
-        <translation>&amp;Проверить сообщение</translation>
+        <translation>Про&amp;верить сообщение</translation>
     </message>
     <message>
         <location line="-64"/>

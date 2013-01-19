@@ -54,6 +54,8 @@
 #include <QDragEnterEvent>
 #include <QUrl>
 #include <QStyle>
+#include <QSettings>
+#include <QDesktopWidget>
 
 #include <iostream>
 
@@ -68,7 +70,7 @@ FreicoinGUI::FreicoinGUI(QWidget *parent):
     notificator(0),
     rpcConsole(0)
 {
-    resize(850, 550);
+    restoreWindowGeometry();
     setWindowTitle(tr("Freicoin") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/freicoin"));
@@ -181,6 +183,7 @@ FreicoinGUI::FreicoinGUI(QWidget *parent):
 
 FreicoinGUI::~FreicoinGUI()
 {
+    saveWindowGeometry();
     if(trayIcon) // Hide tray icon, as deleting will let it linger until quit (on Ubuntu)
         trayIcon->hide();
 #ifdef Q_OS_MAC
@@ -198,13 +201,13 @@ void FreicoinGUI::createActions()
     overviewAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
     tabGroup->addAction(overviewAction);
 
-    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send coins"), this);
+    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send"), this);
     sendCoinsAction->setToolTip(tr("Send coins to a Freicoin address"));
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
 
-    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive coins"), this);
+    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
     receiveCoinsAction->setToolTip(tr("Show the list of addresses for receiving payments"));
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
@@ -216,7 +219,7 @@ void FreicoinGUI::createActions()
     historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_4));
     tabGroup->addAction(historyAction);
 
-    addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&Address Book"), this);
+    addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&Contacts"), this);
     addressBookAction->setToolTip(tr("Edit the list of stored addresses and labels"));
     addressBookAction->setCheckable(true);
     addressBookAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
@@ -246,7 +249,7 @@ void FreicoinGUI::createActions()
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
     optionsAction->setToolTip(tr("Modify configuration options for Freicoin"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
-    toggleHideAction = new QAction(QIcon(":/icons/freicoin"), tr("&Show / Hide"), this);
+    toggleHideAction = new QAction(QIcon(":/icons/freicoin"), tr("Show / &Hide"), this);
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
     encryptWalletAction->setToolTip(tr("Encrypt or decrypt wallet"));
     encryptWalletAction->setCheckable(true);
@@ -618,6 +621,28 @@ void FreicoinGUI::closeEvent(QCloseEvent *event)
 #endif
     }
     QMainWindow::closeEvent(event);
+}
+
+void FreicoinGUI::saveWindowGeometry()
+{
+    QSettings settings;
+    settings.setValue("winPos", pos());
+    settings.setValue("winSize", size());
+}
+
+void FreicoinGUI::restoreWindowGeometry()
+{
+    QSettings settings;
+    QPoint pos = settings.value("winPos").toPoint();
+    QSize size = settings.value("winSize", QSize(760, 460)).toSize();
+    if (!pos.x() && !pos.y())
+    {
+        QRect screen = qApp->desktop()->screenGeometry();
+        pos.setX((screen.width()-size.width())/2);
+        pos.setY((screen.height()-size.height())/2);
+    }
+    resize(size);
+    move(pos);
 }
 
 void FreicoinGUI::askFee(const mpq& nFeeRequired, bool *payFee)
