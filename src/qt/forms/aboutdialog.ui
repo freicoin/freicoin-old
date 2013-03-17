@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>660</height>
+    <width>620</width>
+    <height>360</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -92,13 +92,8 @@
        </property>
        <property name="text">
         <string>Copyright © 2009-2012 Bitcoin developers
-Copyright © 2011-2012 Freicoin developers
-
-The conceptual marriage of Gesell's Freigeld with Bitcoin is due to one individual without whom this project would never have started: Jorge Timón. The initial release would not have been possible without further contributions from developers Mark Friedenbach, Matthew Redmond, Aaron Blumenshine, and an anonymous contributor.
-
-The initial development of Freicoin was made possible through generous financial support from Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis, Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O'Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk, and anonymous supporters.
-
-Last but certainly not least, we all owe a debt to the legacy of Silvio Gesell, as it is upon his theory of free money that Freicoin is built.</string>
+Copyright © 2011-2013 Freicoin developers
+</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -114,8 +109,7 @@ Last but certainly not least, we all owe a debt to the legacy of Silvio Gesell, 
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>
-This is experimental software.
+        <string>This is experimental software.
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
