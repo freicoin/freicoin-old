@@ -969,8 +969,15 @@ bool static VerifyBudget(const std::map<CTxDestination, mpq>& mapBudget,
 mpq static GetInitialDistributionAmount(int nHeight)
 {
     mpq nSubsidy = 0;
-    if ( nHeight < EQ_HEIGHT )
-        nSubsidy = TITHE_AMOUNT + (EQ_HEIGHT-nHeight) * INITIAL_SUBSIDY / EQ_HEIGHT;
+    if ( !fTestNet && nHeight < DIFF_FILTER_THRESHOLD ) {
+        mpz zInitialSubsidy = INITIAL_SUBSIDY.get_num();
+        if ( nHeight < EQ_HEIGHT )
+            nSubsidy = TITHE_AMOUNT + (EQ_HEIGHT-nHeight) * zInitialSubsidy / EQ_HEIGHT;
+    }
+    else {
+        if ( nHeight < EQ_HEIGHT )
+            nSubsidy = TITHE_AMOUNT + (EQ_HEIGHT-nHeight) * INITIAL_SUBSIDY / EQ_HEIGHT;
+    }
     return nSubsidy;
 }
 
@@ -1412,6 +1419,12 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     // Genesis block
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
+
+    // Special, one-time adjustment due to the "hash crash" of Apr/May 2013
+    // which rushed the introduction of the new difficulty adjustment filter.
+    // We adjust back to the difficulty prior to the last adjustment.
+    if ( !fTestNet && pindexLast->nHeight==(DIFF_FILTER_THRESHOLD-1) )
+        return 0x1b01c13a;
 
     bool fUseFilter =
          (fTestNet && pindexLast->nHeight>=(DIFF_FILTER_THRESHOLD_TESTNET-1)) ||
