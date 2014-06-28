@@ -97,6 +97,7 @@ OverviewPage::OverviewPage(QWidget *parent) :
     currentBalance(-1),
     currentUnconfirmedBalance(-1),
     currentImmatureBalance(-1),
+    blockDemurrageRate(-1),
     txdelegate(new TxViewDelegate()),
     filter(0)
 {
@@ -129,12 +130,14 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::setBalance(const mpq& balance, const mpq& unconfirmedBalance, const mpq& immatureBalance)
+void OverviewPage::setBalance(const mpq& balance, const mpq& unconfirmedBalance, const mpq& immatureBalance, const mpq& blockDemurrage)
 {
     int unit = model->getOptionsModel()->getDisplayUnit();
     currentBalance = balance;
     currentUnconfirmedBalance = unconfirmedBalance;
     currentImmatureBalance = immatureBalance;
+    blockDemurrageRate = blockDemurrage;
+
     ui->labelBalance->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(balance, ROUND_TOWARDS_ZERO)));
     ui->labelUnconfirmed->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(unconfirmedBalance, ROUND_TOWARDS_ZERO)));
     ui->labelImmature->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(immatureBalance, ROUND_TOWARDS_ZERO)));
@@ -144,6 +147,11 @@ void OverviewPage::setBalance(const mpq& balance, const mpq& unconfirmedBalance,
     bool showImmature = immatureBalance != 0;
     ui->labelImmature->setVisible(showImmature);
     ui->labelImmatureText->setVisible(showImmature);
+
+    //Show Demurrage rates
+    ui->labelBlockDemurrage->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(blockDemurrage, ROUND_TOWARDS_ZERO)));
+    ui->labelDayDemurrage->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(blockDemurrage * 144, ROUND_TOWARDS_ZERO)));
+    ui->labelYearDemurrage->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(blockDemurrage * 52579, ROUND_TOWARDS_ZERO)));
 }
 
 void OverviewPage::setNumTransactions(int count)
@@ -170,8 +178,8 @@ void OverviewPage::setModel(WalletModel *model)
         int nBlockHeight = nBestHeight;
 
         // Keep up to date with wallet
-        setBalance(model->getBalance(nBlockHeight), model->getUnconfirmedBalance(nBlockHeight), model->getImmatureBalance(nBlockHeight));
-        connect(model, SIGNAL(balanceChanged(const mpq&, const mpq&, const mpq&)), this, SLOT(setBalance(const mpq&, const mpq&, const mpq&)));
+        setBalance(model->getBalance(nBlockHeight), model->getUnconfirmedBalance(nBlockHeight), model->getImmatureBalance(nBlockHeight), model->getBalance(nBlockHeight) - GetTimeAdjustedValue(model->getBalance(nBlockHeight), 1));
+        connect(model, SIGNAL(balanceChanged(const mpq&, const mpq&, const mpq&, const mpq&)), this, SLOT(setBalance(const mpq&, const mpq&, const mpq&, const mpq&)));
 
         setNumTransactions(model->getNumTransactions());
         connect(model, SIGNAL(numTransactionsChanged(int)), this, SLOT(setNumTransactions(int)));
@@ -188,7 +196,7 @@ void OverviewPage::updateDisplayUnit()
     if(model && model->getOptionsModel())
     {
         if(currentBalance != -1)
-            setBalance(currentBalance, currentUnconfirmedBalance, currentImmatureBalance);
+            setBalance(currentBalance, currentUnconfirmedBalance, currentImmatureBalance, blockDemurrageRate);
 
         // Update txdelegate->unit with the current unit
         txdelegate->unit = model->getOptionsModel()->getDisplayUnit();
