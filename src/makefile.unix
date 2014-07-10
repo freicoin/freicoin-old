@@ -5,6 +5,7 @@
 USE_UPNP:=0
 USE_IPV6:=1
 
+CXXFLAGS=-I/usr/local/BerkeleyDB.4.8/include
 LINK:=$(CXX)
 
 DEFS=-DBOOST_SPIRIT_THREADSAFE
